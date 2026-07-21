@@ -1,0 +1,14 @@
+# API keys (real credentials)
+config.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data & output (generated at runtime)
+data/
+output/
+
+# macOS
+.DS_Store
