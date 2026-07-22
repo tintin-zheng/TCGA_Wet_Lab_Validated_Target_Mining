@@ -13,22 +13,7 @@ PubMed contains >37 million biomedical articles. Target-disease associations are
 
 ## Pipeline Architecture
 
-```
-Step 0 (pre-survey) -> Step 1 (search) -> Step 2 (LLM extract) -> Step 3 (integrate)
-     │                     │                    │                     │
-     ▼                     ▼                    ▼                     ▼
-  Count PubMed      33 cancers ×           LLM judges             Filter wet-lab
-  papers per        200 papers each        each abstract         → deduplicate
-  cancer type       = 6,600 max           + extracts             → aggregate
-                                          structured targets     → output CSV
-```
-
-| Step | Script | What It Does |
-|------|--------|--------------|
-| 0 | `step_0.py` | Pre-survey: count PubMed hits per cancer, estimate cost |
-| 1 | `step1_search.py` | PubMed search + batch abstract fetching (37 Q1 journals) |
-| 2 | `step2_extract.py` | DeepSeek LLM classifies wet-lab validation + extracts targets |
-| 3 | `step3_integrate.py` | Filter, deduplicate, majority-vote aggregation, export CSV |
+![Illustration](assets/pipeline architecture.png)
 
 ## Setup
 
