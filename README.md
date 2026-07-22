@@ -13,7 +13,7 @@ PubMed contains >37 million biomedical articles. Target-disease associations are
 
 ## Pipeline Architecture
 
-![Illustration](assets/pipeline architecture.png)
+![Illustration](assets/pipeline_architecture.png)
 
 ## Setup
 
