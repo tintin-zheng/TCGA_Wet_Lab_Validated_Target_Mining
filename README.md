@@ -6,10 +6,10 @@ An LLM-powered automated pipeline that systematically mines **wet-lab experiment
 
 PubMed contains >37 million biomedical articles. Target-disease associations are scattered across tens of thousands of papers, and most bioinformatics predictions lack experimental validation. This pipeline:
 
-1. Searches top-tier journals for each cancer type
-2. Uses a large language model (DeepSeek) to read every abstract and determine whether it contains wet-lab validation
+1. Literature screening across top-tier journals for each cancer type
+2. Uses a large language model (e.g., DeepSeek) to read every abstract and determine whether it contains wet-lab validation
 3. Extracts structured target-disease associations (gene symbol, expression change, functional role, experimental evidence, etc.)
-4. Outputs a deduplicated CSV ready for downstream analysis
+4. Outputs a CSV for downstream analysis
 
 ## Pipeline Architecture
 
@@ -55,7 +55,7 @@ cp config.example.py config.py
 | `PIPELINE_CANCERS` | Run specific cancer types, e.g. `ACC,BRCA,LIHC` | All 33 |
 | `PIPELINE_TAG` | Suffix for output files (isolates runs) | None |
 | `PIPELINE_MAX_CANCERS` | Limit to first N cancer types | All |
-| `PIPELINE_PAPERS_PER_CANCER` | Cap papers per cancer in Step 2 | All |
+| `PIPELINE_PAPERS_PER_CANCER` | Cap papers per cancer in Step 2 (0 = no further cap, all from Step 1) | 0 (up to 200 from Step 1) |
 | `EXTRACT_MAX_WORKERS` | Thread count for LLM extraction | 8 |
 | `EXTRACT_MAX_RETRIES` | Max API retries | 3 |
 
@@ -116,13 +116,6 @@ The final CSV (`output/final_targets.csv`) contains one row per target-disease a
 | `model_type` | cell line / animal model / clinical sample / mixed |
 | `pmid` / `doi` | PubMed ID and DOI (semicolon-joined if multiple papers) |
 | `n_papers` | Number of supporting papers for this target-disease association |
-
-## Key Design Decisions
-
-- **Complete evidence chain**: Wet-lab validation requires intervention (CRISPR/KO/siRNA/drug) + molecular detection (WB/qPCR/IHC) + functional phenotype — all explicitly stated in the abstract. Pure bioinformatics predictions are excluded.
-- **37 Q1 journals** (Nature, Cell, Cancer Discovery, JCO, etc.) + extended journals for 3 rare cancer types (KIRP, KICH, UCS).
-- **Majority voting**: When multiple papers report the same target for the same cancer, functional_role is resolved by majority vote with vote counts (e.g., `Oncogene (3/4)`).
-- **Defensive JSON parsing**: 3-layer fallback (direct → regex extraction → strip markdown markers) to handle irregular LLM outputs.
 
 ## Notes
 
