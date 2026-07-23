@@ -57,23 +57,21 @@ Strictly output the following JSON format (do not output anything else):
 Rules:
 
 1. has_wet_lab_validation=true condition:
-   The abstract must describe a complete evidence chain: intervention + molecular detection (+ functional phenotype).
+   Judgment principle: the authors performed a deliberate experimental manipulation on a biological system
+   (cells, tissues, or animals) and then measured a molecular or functional outcome. The key question is:
+   "Did the authors DO something to the biology and MEASURE the result in the lab?"
 
-   Complete evidence chain = intervention + molecular detection result (+ functional phenotype change)
-
-   Acceptable interventions:
-   - Genetic manipulation: knockout, knockdown, siRNA, shRNA, CRISPR, overexpression, transfection
-   - Drug treatment: drug/compound treatment of cells or animals followed by molecular detection
-   - Animal experiments: in vivo, xenograft, mouse model, transgenic mouse, PDX
-   - Molecular detection: Western blot, qPCR, RT-PCR, ELISA, IHC, IF, Co-IP, ChIP
-   - Cell functional assays: proliferation assay, wound healing, transwell, colony formation, flow cytometry
+   Common intervention types include genetic manipulation (knockout, knockdown, siRNA, CRISPR, overexpression),
+   drug/inhibitor treatment, and animal models (xenograft, PDX, transgenic mice). Detection methods include
+   Western blot, qPCR, IHC, IF, flow cytometry, and functional assays (proliferation, migration, apoptosis, etc.).
+   These are illustrative only — use your judgment. Any experimental perturbation + molecular measurement counts.
 
    Bioinformatics + wet lab mixed papers: if the paper contains any wet lab validation part, it counts as true.
 
 2. has_wet_lab_validation=false condition:
    - Review, meta-analysis, guideline -> is_review=true
    - Pure bioinformatics prediction: network pharmacology, molecular docking, TCGA mining alone, co-expression analysis alone
-   - Single-cell sequencing / spatial transcriptomics (without functional validation) -> classified as bioinformatics
+   - Single-cell sequencing / spatial transcriptomics (without functional validation)
    - Pure clinical trial report: only reports drug efficacy, no molecular target validation
    - Epidemiological study: only reports incidence/survival rate, no molecular experiments
    - Pure prognostic correlation IHC: IHC staining + survival analysis only, no functional experiments (no knockout/overexpression/drug intervention) -> NOT wet lab validation
