@@ -64,6 +64,8 @@ python step2_extract.py
 # Step 3: Integrate & Export
 python step3_integrate.py
 # Output: output/final_targets.csv + output/pipeline_summary.md
+# On first run: auto-downloads HGNC gene database (~32 MB) for symbol standardization
+# Skip with: SKIP_GENE_MAPPING=true python step3_integrate.py
 ```
 
 ### Mini Test Run (single cancer)
@@ -81,6 +83,29 @@ All steps support checkpoint/resume — just re-run the same command. Already-pr
 ```bash
 # Prevent laptop sleep during long Step 2 runs
 caffeinate -i python step2_extract.py
+```
+
+### Gene Standardization
+
+Step 3 automatically maps the LLM-extracted target names to standardized identifiers using the [HGNC](https://www.genenames.org/) complete set:
+
+1. **First run:** downloads `hgnc_complete_set.json` (~32 MB) to `data/` — one-time cost
+2. **Subsequent runs:** uses the cached file, no network needed
+3. **Alias resolution:** colloquial names are corrected (e.g., HER2 → ERBB2, p53 → TP53, Hsp90 → HSP90AA1)
+4. **Non-gene targets:** pathways, miRNAs, and lncRNAs get empty gene ID columns (they have no NCBI Gene ID)
+
+Three new columns are added to the final CSV:
+
+| Column | Example | Purpose |
+|--------|---------|---------|
+| `official_symbol` | ERBB2 | HGNC-approved gene symbol |
+| `ncbi_gene_id` | 2064 | NCBI Gene ID → cBioPortal, GO/KEGG enrichment |
+| `ensembl_id` | ENSG00000141736 | Ensembl ID → TCGA, RNA-seq integration |
+
+To skip gene mapping for quick test runs:
+
+```bash
+SKIP_GENE_MAPPING=true PIPELINE_CANCERS=ACC PIPELINE_TAG=quick python step3_integrate.py
 ```
 
 ## Output Format
