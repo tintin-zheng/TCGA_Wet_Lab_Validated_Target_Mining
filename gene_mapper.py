@@ -30,8 +30,9 @@ class GeneMapper:
         self._symbols = {}   # UPPERCASE_SYMBOL → {official_symbol, ncbi_gene_id, ensembl_id}
         self._aliases = {}   # UPPERCASE_ALIAS  → official_symbol
         self._prev = {}      # UPPERCASE_PREV   → official_symbol
-        self._hits = 0
-        self._misses = 0
+        self._hits = 0       # gene targets successfully mapped
+        self._misses = 0     # gene targets not found in HGNC
+        self._skipped = {}   # non-gene targets skipped by type (e.g. {"miRNA": 9, "pathway": 8})
 
     def _ensure_loaded(self):
         if self._loaded:
@@ -155,7 +156,8 @@ class GeneMapper:
 
         # Only attempt mapping for gene-like targets
         if target_type and target_type.lower() not in MAPPABLE_TYPES:
-            self._misses += 1
+            t = target_type.lower()
+            self._skipped[t] = self._skipped.get(t, 0) + 1
             return "", "", ""
 
         self._ensure_loaded()
@@ -210,10 +212,23 @@ class GeneMapper:
         return name, "", ""
 
     def get_stats(self):
-        """Return hit/miss statistics for monitoring mapping coverage."""
-        return {"hits": self._hits, "misses": self._misses,
-                "total": self._hits + self._misses,
-                "rate": self._hits / max(self._hits + self._misses, 1) * 100}
+        """Return detailed mapping statistics.
+
+        - hits: gene targets successfully mapped to HGNC
+        - misses: gene targets NOT found in HGNC (potential issues)
+        - gene_total: hits + misses (gene-like targets only)
+        - skipped: non-gene targets by type (expected — they have no gene IDs)
+        - rate: hit rate for gene-like targets only (excludes skipped)
+        """
+        gene_total = self._hits + self._misses
+        return {
+            "hits": self._hits,
+            "misses": self._misses,
+            "gene_total": gene_total,
+            "skipped": dict(self._skipped),
+            "skipped_total": sum(self._skipped.values()),
+            "rate": self._hits / max(gene_total, 1) * 100,
+        }
 
     @staticmethod
     def _detect_separator(name):
