@@ -301,6 +301,36 @@ def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer, mapper
     lines.append("")
     lines.append("---")
     lines.append("")
+    lines.append("## Gene Standardization")
+    lines.append("")
+    if mapper:
+        stats = mapper.get_stats()
+        lines.append(f"Target names from LLM extraction are mapped to HGNC-approved official symbols, NCBI Gene IDs, and Ensembl IDs using the [HGNC complete set](https://www.genenames.org/).")
+        lines.append("")
+        lines.append("| Metric | Value |")
+        lines.append("|--------|-------|")
+        lines.append(f"| Gene targets attempted | {stats['total']:,} |")
+        lines.append(f"| Successfully mapped | {stats['hits']:,} ({stats['rate']:.1f}%) |")
+        lines.append(f"| Not found in HGNC | {stats['misses']:,} |")
+        # Breakdown by target type
+        has_official = deduped["official_symbol"] != ""
+        if has_official.any():
+            with_gene_id = deduped[has_official]
+            alias_corrected = with_gene_id[with_gene_id["official_symbol"].str.upper() != with_gene_id["target"].str.upper()]
+            lines.append(f"| Alias / prev-symbol corrected | {len(alias_corrected):,} |")
+        # Non-mappable breakdown
+        no_official = deduped["official_symbol"] == ""
+        if no_official.any():
+            non_gene = deduped[no_official]
+            type_counts = non_gene["target_type"].value_counts()
+            lines.append(f"| Non-mappable targets | {len(non_gene):,} |")
+            for ttype, cnt in type_counts.items():
+                lines.append(f"|    ↳ {ttype} | {cnt:,} |")
+    else:
+        lines.append("Gene standardization was **skipped** (`SKIP_GENE_MAPPING=true`). No `official_symbol`, `ncbi_gene_id`, or `ensembl_id` columns were populated.")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
     lines.append("## Configuration")
     lines.append("")
     lines.append(f"- **Model:** {DEEPSEEK_MODEL}")
