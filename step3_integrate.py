@@ -8,6 +8,7 @@ from datetime import datetime
 import pandas as pd
 from collections import Counter
 from config import TARGET_COUNT, TCGA_CANCERS, DEEPSEEK_MODEL
+from gene_mapper import GeneMapper
 
 
 def majority_vote(values):
@@ -42,6 +43,13 @@ def run_integration():
     os.makedirs("output", exist_ok=True)
     results_table = []
     per_cancer_stats = {}  # {code: {screened, wet_lab, review, insufficient, other}}
+
+    # Gene mapping (skip with SKIP_GENE_MAPPING=true for quick runs)
+    if os.getenv("SKIP_GENE_MAPPING", "").strip().lower() == "true":
+        mapper = None
+        print("[step3] SKIP_GENE_MAPPING=true — gene mapping disabled.")
+    else:
+        mapper = GeneMapper()
 
     for code, extractions in all_extractions.items():
         cn_name = TCGA_CANCERS[code][1]
@@ -86,13 +94,23 @@ def run_integration():
                 gene = target.get("target_name", "").strip()
                 if not gene:
                     continue
+                target_type = target.get("target_type", "")
+
+                # Standardize gene symbol via HGNC
+                if mapper:
+                    official, ncbi_id, ensembl_id = mapper.lookup(gene, target_type)
+                else:
+                    official, ncbi_id, ensembl_id = "", "", ""
 
                 results_table.append({
                     "tcga_code": code,
                     "disease_en": en_name,
                     "disease_cn": cn_name,
                     "target": gene,
-                    "target_type": target.get("target_type", ""),
+                    "target_type": target_type,
+                    "official_symbol": official,
+                    "ncbi_gene_id": ncbi_id,
+                    "ensembl_id": ensembl_id,
                     "expression_change": target.get("expression_change", "Null"),
                     "functional_role": target.get("functional_role", "Null"),
                     "evidence_summary": evidence,
@@ -118,6 +136,9 @@ def run_integration():
         "disease_en": "first",
         "disease_cn": "first",
         "target_type": "first",
+        "official_symbol": "first",
+        "ncbi_gene_id": "first",
+        "ensembl_id": "first",
         "expression_change": lambda x: "; ".join(sorted(set(v for v in x if v and v != "Null"))) or "Null",
         "functional_role": lambda x: majority_vote(list(x)),
         "evidence_summary": lambda x: " | ".join(x.dropna()),
@@ -184,6 +205,9 @@ def run_integration():
     print(f"  Total target-disease associations: {len(deduped)}")
     print(f"  Cancer types covered: {deduped['tcga_code'].nunique()}")
     print(f"  Unique targets: {deduped['target'].nunique()}")
+    if mapper:
+        stats = mapper.get_stats()
+        print(f"  Gene standardization: {stats['hits']}/{stats['total']} mapped ({stats['rate']:.1f}%)")
     print(f"\n  Per-cancer breakdown:")
     print(f"  {'Code':<8} {'Disease':<24} {'Screened':>8} {'Wet':>5} {'Rate':>7} {'Targets':>8} {'Supp.Papers':>12}")
     print(f"  {'-'*78}")
@@ -205,10 +229,11 @@ def run_integration():
         deduped=deduped,
         breakdown_rows=breakdown_rows,
         multi_cancer=multi_cancer,
+        mapper=mapper,
     )
 
 
-def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer):
+def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer, mapper=None):
     """Generate a human-readable pipeline summary in Markdown."""
     summary_path = f"output/pipeline_summary{suffix}.md"
     tag = suffix.lstrip("_") if suffix else "default"
@@ -240,6 +265,9 @@ def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer):
     lines.append(f"| Final target-disease associations | {len(deduped):,} |")
     lines.append(f"| Unique targets | {deduped['target'].nunique():,} |")
     lines.append(f"| Cross-cancer targets (≥3 cancers) | {len(multi_cancer):,} |")
+    if mapper:
+        stats = mapper.get_stats()
+        lines.append(f"| Gene targets standardized | {stats['hits']:,} ({stats['rate']:.1f}%) |")
     lines.append("")
     lines.append("---")
     lines.append("")

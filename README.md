@@ -43,6 +43,7 @@ cp config.example.py config.py
 | `PIPELINE_PAPERS_PER_CANCER` | Cap papers per cancer in Step 2 (0 = no further cap, all from Step 1) | 0 (up to 200 from Step 1) |
 | `EXTRACT_MAX_WORKERS` | Thread count for LLM extraction | 8 |
 | `EXTRACT_MAX_RETRIES` | Max API retries | 3 |
+| `SKIP_GENE_MAPPING` | Set to `true` to skip HGNC download & gene mapping | false |
 
 ## Usage
 
@@ -93,6 +94,9 @@ The final CSV (`output/final_targets.csv`) contains one row per target-disease a
 | `disease_en` / `disease_cn` | Disease name |
 | `target` | HGNC gene symbol, miRNA, lncRNA, or pathway name |
 | `target_type` | gene / protein / miRNA / lncRNA / pathway |
+| `official_symbol` | HGNC-approved official gene symbol (empty for non-gene targets) |
+| `ncbi_gene_id` | NCBI Gene ID for cBioPortal / GO-KEGG enrichment (empty for non-genes) |
+| `ensembl_id` | Ensembl Gene ID for TCGA / RNA-seq integration (empty for non-genes) |
 | `expression_change` | Upregulated / Downregulated / Unchanged / Null |
 | `functional_role` | Oncogene / Tumor suppressor / Protective / Risk / Biomarker / Null (with majority vote count) |
 | `evidence_summary` | One-sentence experimental evidence per supporting paper |
@@ -119,3 +123,4 @@ This report persists after the terminal session ends and renders natively on Git
 - The `data/` and `output/` directories are gitignored — generated at runtime.
 - NCBI Entrez API requires your email; add an API key for higher rate limits.
 - DeepSeek extraction for all 33 cancers × 200 papers takes ~2-3 hours with 8 threads.
+- **Gene standardization:** On first run, Step 3 downloads the HGNC complete set (~32 MB) to `data/hgnc_complete_set.json`. This is a one-time download. Set `SKIP_GENE_MAPPING=true` to skip this step for quick test runs.
