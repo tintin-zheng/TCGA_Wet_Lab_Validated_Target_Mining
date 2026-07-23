@@ -10,5 +10,8 @@ __pycache__/
 data/
 output/
 
+# Analysis (local only, not for distribution)
+analysis/
+
 # macOS
 .DS_Store
