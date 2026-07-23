@@ -3,9 +3,11 @@
 
 import json
 import os
+from datetime import datetime
+
 import pandas as pd
 from collections import Counter
-from config import TARGET_COUNT, TCGA_CANCERS
+from config import TARGET_COUNT, TCGA_CANCERS, DEEPSEEK_MODEL
 
 
 def majority_vote(values):
@@ -39,6 +41,7 @@ def run_integration():
 
     os.makedirs("output", exist_ok=True)
     results_table = []
+    per_cancer_stats = {}  # {code: {screened, wet_lab, review, insufficient, other}}
 
     for code, extractions in all_extractions.items():
         cn_name = TCGA_CANCERS[code][1]
@@ -55,6 +58,14 @@ def run_integration():
         n_review = sum(1 for r in extractions if r.get("is_review"))
         n_insufficient = sum(1 for r in extractions if r.get("insufficient_info"))
         n_other = n_total - n_wet - n_review - n_insufficient
+        per_cancer_stats[code] = {
+            "disease": cn_name,
+            "screened": n_total,
+            "wet_lab": n_wet,
+            "review": n_review,
+            "insufficient": n_insufficient,
+            "other": n_other,
+        }
         print(f"  Total: {n_total} | Wet lab: {n_wet} | Review/Bioinfo: {n_review} | Insufficient: {n_insufficient} | Other: {n_other}")
 
         # 1. Filter wet lab papers
@@ -139,31 +150,47 @@ def run_integration():
     output_csv = f"output/final_targets{suffix}.csv"
     deduped.to_csv(output_csv, index=False, encoding="utf-8-sig")
 
-    # 6. Statistics
+    # 6. Build per-cancer breakdown (all 33 cancers, including those with 0 targets)
+    breakdown_rows = []
+    for code in TCGA_CANCERS:
+        stats = per_cancer_stats.get(code, {})
+        sub = deduped[deduped["tcga_code"] == code]
+        # Count unique supporting PMIDs from final deduped table
+        all_pmids = set()
+        for pmids_str in sub["pmid"]:
+            all_pmids.update(p.strip() for p in pmids_str.split(";") if p.strip())
+        n_support_papers = len(all_pmids) if not sub.empty else 0
+        breakdown_rows.append({
+            "code": code,
+            "disease": TCGA_CANCERS[code][1],
+            "screened": stats.get("screened", 0),
+            "wet_lab": stats.get("wet_lab", 0),
+            "wet_rate": f"{stats.get('wet_lab', 0) / max(stats.get('screened', 1), 1) * 100:.1f}%",
+            "review": stats.get("review", 0),
+            "insufficient": stats.get("insufficient", 0),
+            "other": stats.get("other", 0),
+            "final_targets": len(sub),
+            "support_papers": n_support_papers,
+        })
+
+    # 7. Cross-cancer target statistics
+    cross_cancer = deduped.groupby("target")["tcga_code"].nunique().sort_values(ascending=False)
+    multi_cancer = cross_cancer[cross_cancer >= 3]
+
+    # 8. Terminal output
     print(f"\n{'='*60}")
     print(f"  Final Results")
     print(f"{'='*60}")
     print(f"  Total target-disease associations: {len(deduped)}")
     print(f"  Cancer types covered: {deduped['tcga_code'].nunique()}")
     print(f"  Unique targets: {deduped['target'].nunique()}")
-
     print(f"\n  Per-cancer breakdown:")
-    print(f"  {'Code':<8} {'Disease':<24} {'Papers':>7} {'Targets':>8}")
-    print(f"  {'-'*50}")
-    for code in TCGA_CANCERS:
-        sub = deduped[deduped["tcga_code"] == code]
-        all_pmids = set()
-        for pmids_str in sub["pmid"]:
-            all_pmids.update(p.strip() for p in pmids_str.split(";") if p.strip())
-        n_papers = len(all_pmids) if not sub.empty else 0
-        n_targets = len(sub)
-        cn = TCGA_CANCERS[code][1]
-        if n_targets > 0:
-            print(f"  {code:<8} {cn:<24} {n_papers:>7} {n_targets:>8}")
+    print(f"  {'Code':<8} {'Disease':<24} {'Screened':>8} {'Wet':>5} {'Rate':>7} {'Targets':>8} {'Supp.Papers':>12}")
+    print(f"  {'-'*78}")
+    for row in breakdown_rows:
+        if row["wet_lab"] > 0:
+            print(f"  {row['code']:<8} {row['disease']:<24} {row['screened']:>8} {row['wet_lab']:>5} {row['wet_rate']:>7} {row['final_targets']:>8} {row['support_papers']:>12}")
 
-    # 7. Cross-cancer target statistics
-    cross_cancer = deduped.groupby("target")["tcga_code"].nunique().sort_values(ascending=False)
-    multi_cancer = cross_cancer[cross_cancer >= 3]
     print(f"\n  Cross-cancer targets (>= 3 cancer types): {len(multi_cancer)}")
     if len(multi_cancer) > 0:
         print(f"  Top 10:")
@@ -171,6 +198,93 @@ def run_integration():
             print(f"    {gene:<12} {n} cancer types")
 
     print(f"\n  Output: {output_csv}")
+
+    # 9. Write summary markdown
+    write_summary_markdown(
+        suffix=suffix,
+        deduped=deduped,
+        breakdown_rows=breakdown_rows,
+        multi_cancer=multi_cancer,
+    )
+
+
+def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer):
+    """Generate a human-readable pipeline summary in Markdown."""
+    summary_path = f"output/pipeline_summary{suffix}.md"
+    tag = suffix.lstrip("_") if suffix else "default"
+    total_wet = sum(r["wet_lab"] for r in breakdown_rows)
+    total_screened = sum(r["screened"] for r in breakdown_rows)
+    total_review = sum(r["review"] for r in breakdown_rows)
+    total_insufficient = sum(r["insufficient"] for r in breakdown_rows)
+    total_other = sum(r["other"] for r in breakdown_rows)
+
+    lines = []
+    lines.append("# TCGA Wet-Lab Validated Target Mining — Pipeline Summary")
+    lines.append("")
+    lines.append(f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}  ")
+    lines.append(f"**Model:** {DEEPSEEK_MODEL}  ")
+    lines.append(f"**Run tag:** `{tag}`  ")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Overview")
+    lines.append("")
+    lines.append("| Metric | Value |")
+    lines.append("|--------|-------|")
+    lines.append(f"| Cancer types | {len(TCGA_CANCERS)} |")
+    lines.append(f"| Papers screened | {total_screened:,} |")
+    lines.append(f"| Wet-lab validated | {total_wet:,} ({total_wet/max(total_screened,1)*100:.1f}%) |")
+    lines.append(f"| Review / bioinformatics | {total_review:,} |")
+    lines.append(f"| Insufficient info | {total_insufficient:,} |")
+    lines.append(f"| Other (no wet lab) | {total_other:,} |")
+    lines.append(f"| Final target-disease associations | {len(deduped):,} |")
+    lines.append(f"| Unique targets | {deduped['target'].nunique():,} |")
+    lines.append(f"| Cross-cancer targets (≥3 cancers) | {len(multi_cancer):,} |")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Per-Cancer Breakdown")
+    lines.append("")
+    lines.append("| Code | Disease | Screened | Wet Lab | Rate | Review | Insuff. | Other | Final Targets | Supp. Papers |")
+    lines.append("|------|---------|----------|---------|------|--------|---------|-------|---------------|--------------|")
+    for row in breakdown_rows:
+        lines.append(
+            f"| {row['code']} | {row['disease']} | {row['screened']} | {row['wet_lab']} | "
+            f"{row['wet_rate']} | {row['review']} | {row['insufficient']} | {row['other']} | "
+            f"{row['final_targets']} | {row['support_papers']} |"
+        )
+    lines.append("")
+    lines.append("*Screened = total papers processed by LLM; Wet Lab = papers with wet-lab validation; Final Targets = unique target-disease pairs after dedup; Supp. Papers = unique PMIDs supporting final targets.*")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Cross-Cancer Targets (≥3 cancer types)")
+    lines.append("")
+    if len(multi_cancer) > 0:
+        lines.append(f"{len(multi_cancer)} targets appear in 3 or more cancer types.")
+        lines.append("")
+        lines.append("| # | Target | Cancer Types |")
+        lines.append("|---|--------|-------------|")
+        for rank, (gene, count) in enumerate(multi_cancer.head(20).items(), 1):
+            cancers = ", ".join(sorted(deduped[deduped["target"] == gene]["tcga_code"].unique()))
+            lines.append(f"| {rank} | {gene} | {count} ({cancers}) |")
+    else:
+        lines.append("No cross-cancer targets found (≥3 cancer types threshold).")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    lines.append("## Configuration")
+    lines.append("")
+    lines.append(f"- **Model:** {DEEPSEEK_MODEL}")
+    lines.append(f"- **Targets per cancer cap:** {TARGET_COUNT}")
+    lines.append(f"- **Output CSV:** `output/final_targets{suffix}.csv`")
+    lines.append(f"- **Extraction source:** `data/extractions_all{suffix}.json`")
+    lines.append("")
+
+    with open(summary_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"  Summary: {summary_path}")
 
 
 if __name__ == "__main__":

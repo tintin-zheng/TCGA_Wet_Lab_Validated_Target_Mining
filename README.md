@@ -62,7 +62,7 @@ python step2_extract.py
 
 # Step 3: Integrate & Export
 python step3_integrate.py
-# Output: output/final_targets.csv
+# Output: output/final_targets.csv + output/pipeline_summary.md
 ```
 
 ### Mini Test Run (single cancer)
@@ -101,6 +101,17 @@ The final CSV (`output/final_targets.csv`) contains one row per target-disease a
 | `model_type` | cell line / animal model / clinical sample / mixed |
 | `pmid` / `doi` | PubMed ID and DOI (semicolon-joined if multiple papers) |
 | `n_papers` | Number of supporting papers for this target-disease association |
+
+### Pipeline Summary (`output/pipeline_summary.md`)
+
+A human-readable Markdown report is generated alongside the CSV, containing:
+
+- **Overview** — aggregate statistics (papers screened, wet-lab rate, total targets, cross-cancer targets)
+- **Per-Cancer Breakdown** — all 33 cancer types with screened/wet-lab/review/insufficient/other/targets/supporting-papers columns
+- **Cross-Cancer Targets** — targets appearing in ≥3 cancer types with specific cancer type annotations
+- **Configuration** — model, parameters, source file paths
+
+This report persists after the terminal session ends and renders natively on GitHub.
 
 ## Notes
 
