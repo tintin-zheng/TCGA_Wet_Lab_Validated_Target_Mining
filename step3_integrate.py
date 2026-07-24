@@ -40,6 +40,19 @@ def run_integration():
     if not all_extractions:
         raise ValueError("No cancer types selected for integration. Check PIPELINE_CANCERS.")
 
+    # Re-group papers by corrected_tcga_code (LLM may have corrected the cancer type)
+    corrections = 0
+    for code in list(all_extractions.keys()):
+        for paper in list(all_extractions[code]):
+            corrected = (paper.get("corrected_tcga_code") or "").strip()
+            if corrected and corrected != code and corrected in TCGA_CANCERS:
+                # Move paper to the corrected cancer type
+                all_extractions.setdefault(corrected, []).append(paper)
+                all_extractions[code].remove(paper)
+                corrections += 1
+    if corrections:
+        print(f"[step3] Corrected cancer type for {corrections} paper(s) based on LLM judgment")
+
     os.makedirs("output", exist_ok=True)
     results_table = []
     per_cancer_stats = {}  # {code: {screened, wet_lab, review, insufficient, other}}

@@ -30,6 +30,12 @@ def get_client():
 
 EXTRACTION_PROMPT = """You are a biomedical literature analysis expert. Read the following paper abstract and determine whether it contains wet lab validated targets, then extract relevant information.
 
+This paper was retrieved by a PubMed search for: {tcga_code}
+If the paper's PRIMARY study subject is a DIFFERENT cancer type than {tcga_code}, set corrected_tcga_code to the correct TCGA code from the list below. If the cancer type matches {tcga_code}, set corrected_tcga_code to null.
+
+TCGA cancer type codes:
+{tcga_list}
+
 Paper Title: {title}
 Abstract: {abstract}
 
@@ -38,6 +44,7 @@ Strictly output the following JSON format (do not output anything else):
   "has_wet_lab_validation": true/false,
   "is_review": true/false,
   "insufficient_info": true/false,
+  "corrected_tcga_code": "CORRECT_TCGA_CODE or null",
   "evidence_summary": "one-sentence description of experimental evidence, or null if no wet lab or insufficient info",
   "validation_methods": ["method1", "method2"],
   "disease": "disease name",
@@ -150,6 +157,13 @@ Rules:
      * model_type: cannot determine -> "unknown"
      * specific_model_name: cannot extract -> null"""
 
+# Build TCGA cancer code reference list for disease correction in prompt
+_tcga_entries = []
+for _code, (_names, _cn) in sorted(TCGA_CANCERS.items()):
+    _primary = _names[0] if isinstance(_names, list) else _names
+    _tcga_entries.append(f"{_code}: {_primary} ({_cn})")
+TCGA_LIST = "\n".join(_tcga_entries)
+
 
 def safe_json_parse(text):
     """Multi-layer JSON parsing to handle irregular LLM outputs"""
@@ -179,6 +193,7 @@ def safe_json_parse(text):
         "has_wet_lab_validation": False,
         "is_review": False,
         "insufficient_info": True,
+        "corrected_tcga_code": None,
         "evidence_summary": None,
         "validation_methods": [],
         "disease": None,
@@ -187,10 +202,14 @@ def safe_json_parse(text):
     }
 
 
-def extract_targets(title, abstract):
+def extract_targets(title, abstract, tcga_code):
     """Call DeepSeek API to extract target information"""
     # Use direct placeholder replacement so JSON braces in prompt are treated literally.
-    prompt = EXTRACTION_PROMPT.replace("{title}", title).replace("{abstract}", abstract)
+    prompt = (EXTRACTION_PROMPT
+              .replace("{tcga_code}", tcga_code)
+              .replace("{tcga_list}", TCGA_LIST)
+              .replace("{title}", title)
+              .replace("{abstract}", abstract))
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             if REQUEST_GAP > 0:
@@ -212,14 +231,15 @@ def extract_targets(title, abstract):
             time.sleep(backoff)
 
 
-def process_paper(paper):
+def process_paper(paper, tcga_code):
     """Single paper processing function for ThreadPoolExecutor concurrency."""
-    result = extract_targets(paper["title"], paper["abstract"])
+    result = extract_targets(paper["title"], paper["abstract"], tcga_code)
     if result is None:
         result = {
             "has_wet_lab_validation": False,
             "is_review": False,
             "insufficient_info": True,
+            "corrected_tcga_code": None,
             "evidence_summary": None,
             "validation_methods": [],
             "disease": None,
@@ -297,7 +317,7 @@ def run_extraction():
 
         if papers_todo:
             with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-                future_to_paper = {executor.submit(process_paper, p): p for p in papers_todo}
+                future_to_paper = {executor.submit(process_paper, p, code): p for p in papers_todo}
                 futures = list(future_to_paper.keys())
                 for idx, future in enumerate(tqdm(as_completed(futures), total=len(futures), desc=code), start=1):
                     try:
@@ -308,6 +328,7 @@ def run_extraction():
                             "has_wet_lab_validation": False,
                             "is_review": False,
                             "insufficient_info": True,
+                            "corrected_tcga_code": None,
                             "evidence_summary": None,
                             "validation_methods": [],
                             "disease": None,
