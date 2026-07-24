@@ -66,6 +66,12 @@ Rules:
    Western blot, qPCR, IHC, IF, flow cytometry, and functional assays (proliferation, migration, apoptosis, etc.).
    These are illustrative only — use your judgment. Any experimental perturbation + molecular measurement counts.
 
+   IMPORTANT: Having wet-lab techniques ≠ wet-lab target validation. Papers that only observe/measure
+   (mutation scanning, expression profiling, IHC without intervention, sequencing to find mutations) are
+   NOT wet-lab validation — the authors merely described what was there, not what the target DOES.
+   The key differentiator is intervention: the authors must have deliberately perturbed the biology,
+   not just measured it.
+
    Bioinformatics + wet lab mixed papers: if the paper contains any wet lab validation part, it counts as true.
 
 2. has_wet_lab_validation=false condition:
@@ -76,6 +82,10 @@ Rules:
    - Epidemiological study: only reports incidence/survival rate, no molecular experiments
    - Pure prognostic correlation IHC: IHC staining + survival analysis only, no functional experiments (no knockout/overexpression/drug intervention) -> NOT wet lab validation
    - Insufficient information -> insufficient_info=true
+
+   CRITICAL: When has_wet_lab_validation=false, validated_targets MUST be an empty array [].
+   The paper may mention genes/proteins, but without wet-lab functional validation they are NOT valid targets.
+   evidence_summary, validation_methods, and all target fields must be null/empty.
 
 3. insufficient_info rules:
    - insufficient_info = true when:
