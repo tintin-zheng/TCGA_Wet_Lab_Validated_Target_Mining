@@ -11,10 +11,10 @@ SEARCH_COUNT = 400  # PubMed search count per cancer (default)
 
 # ============ Per-Cancer Search Count Overrides ============
 SEARCH_COUNT_OVERRIDES = {
-    "BRCA": 800,   # 12,850 available
-    "COAD": 700,   # 7,884
-    "SKCM": 600,   # 5,723
-    "PRAD": 600,   # 5,270
+    "BRCA": 2000,  # 12,850 available
+    "COAD": 2000,  # 7,884
+    "SKCM": 2000,  # 5,723
+    "PRAD": 2000,  # 5,270
     "SARC": 500,   # 4,711
     "LIHC": 500,   # 4,141
     "LAML": 500,   # 3,959
