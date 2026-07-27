@@ -41,7 +41,7 @@ cp config.example.py config.py
 | `PIPELINE_TAG` | Suffix for output files (isolates runs) | None |
 | `PIPELINE_MAX_CANCERS` | Limit to first N cancer types | All |
 | `PIPELINE_PAPERS_PER_CANCER` | Cap papers per cancer in Step 2 (0 = no further cap, all from Step 1) | 0 (up to 200 from Step 1) |
-| `EXTRACT_MAX_WORKERS` | Thread count for LLM extraction | 8 |
+| `EXTRACT_MAX_WORKERS` | Thread count for LLM extraction | 300 |
 | `EXTRACT_MAX_RETRIES` | Max API retries | 3 |
 | `SKIP_GENE_MAPPING` | Set to `true` to skip HGNC download & gene mapping | false |
 
@@ -147,5 +147,5 @@ This report persists after the terminal session ends and renders natively on Git
 - `config.py` contains real API keys and is gitignored. Use `config.example.py` as a template.
 - The `data/` and `output/` directories are gitignored — generated at runtime.
 - NCBI Entrez API requires your email; add an API key for higher rate limits.
-- DeepSeek extraction for all 33 cancers × 200 papers takes ~2-3 hours with 8 threads.
+- DeepSeek extraction for all 33 cancers varies by cancer: 400-800 papers for most, up to 2,000 for high-volume cancers (BRCA, COAD, SKCM, PRAD). With 300 threads, the full run takes ~20-40 minutes for incremental updates.
 - **Gene standardization:** On first run, Step 3 downloads the HGNC complete set (~32 MB) to `data/hgnc_complete_set.json`. This is a one-time download. Set `SKIP_GENE_MAPPING=true` to skip this step for quick test runs.

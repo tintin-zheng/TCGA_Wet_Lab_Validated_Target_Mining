@@ -11,7 +11,7 @@ from openai import OpenAI
 from tqdm import tqdm
 from config import DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL, DEEPSEEK_MODEL, TCGA_CANCERS
 
-MAX_WORKERS = int(os.getenv("EXTRACT_MAX_WORKERS", "8"))
+MAX_WORKERS = int(os.getenv("EXTRACT_MAX_WORKERS", "300"))
 MAX_RETRIES = int(os.getenv("EXTRACT_MAX_RETRIES", "3"))
 REQUEST_GAP = float(os.getenv("EXTRACT_REQUEST_GAP", "0.0"))
 SAVE_EVERY = int(os.getenv("EXTRACT_SAVE_EVERY", "20"))
