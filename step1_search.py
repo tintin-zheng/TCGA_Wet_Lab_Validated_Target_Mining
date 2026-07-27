@@ -74,6 +74,73 @@ def search_pmids(query, max_results=200):
     return results["IdList"]
 
 
+def search_pmids_with_split(query, target_count, pubmed_total):
+    """Search PubMed with year-range splitting when total > 9,999.
+
+    NCBI esearch caps at 9,999 PMIDs regardless of retmax.
+    When the available pool exceeds 9,999, this function splits
+    the query by date ranges to retrieve all PMIDs.
+    """
+    if pubmed_total <= 9999:
+        return search_pmids(query, max_results=target_count)
+
+    # Need date-range splitting
+    n_chunks = max(2, int(pubmed_total / 8000) + 1)  # 8000 per chunk for safety margin
+    current_year = 2026
+    start_year = 1950
+    span = current_year - start_year
+    chunk_span = max(1, span // n_chunks)
+
+    all_pmids = []
+    seen = set()
+    print(f"  PubMed total {pubmed_total:,} > 9,999 — splitting into {n_chunks} year-range chunks")
+
+    for i in range(n_chunks):
+        y_start = start_year + i * chunk_span
+        y_end = min(current_year, y_start + chunk_span - 1) if i < n_chunks - 1 else current_year
+        date_filter = f'{y_start}/01/01:{y_end}/12/31[PDAT]'
+        chunk_query = f'({query}) AND ("{date_filter}")'
+
+        handle = Entrez.esearch(
+            db="pubmed", term=chunk_query,
+            retmax=9999, sort="relevance"
+        )
+        results = Entrez.read(handle)
+        handle.close()
+        chunk_pmids = results["IdList"]
+        chunk_total = int(results.get("Count", 0))
+
+        new_count = sum(1 for pid in chunk_pmids if pid not in seen)
+        all_pmids.extend([pid for pid in chunk_pmids if pid not in seen])
+        seen.update(chunk_pmids)
+        time.sleep(0.4)  # respect NCBI rate limit
+
+        # If a chunk returned 9,999 and the count also says 9,999+, split it further
+        if len(chunk_pmids) >= 9999 and chunk_total > len(chunk_pmids):
+            # Recursively split this chunk with finer year granularity
+            sub_span = max(3, chunk_span // 2)
+            for sub_start in range(y_start, y_end + 1, sub_span):
+                sub_end = min(y_end, sub_start + sub_span - 1)
+                sub_date = f'{sub_start}/01/01:{sub_end}/12/31[PDAT]'
+                sub_query = f'({query}) AND ("{sub_date}")'
+                handle2 = Entrez.esearch(
+                    db="pubmed", term=sub_query,
+                    retmax=9999, sort="relevance"
+                )
+                sub_results = Entrez.read(handle2)
+                handle2.close()
+                sub_pmids = sub_results["IdList"]
+                all_pmids.extend([pid for pid in sub_pmids if pid not in seen])
+                seen.update(sub_pmids)
+                time.sleep(0.3)
+
+    # Trim to target_count (preserving relevance order across chunks)
+    if len(all_pmids) > target_count:
+        all_pmids = all_pmids[:target_count]
+
+    return all_pmids
+
+
 def fetch_abstracts(pmids, max_retries=3):
     """Batch fetch paper abstracts and metadata with retry on network errors"""
     if not pmids:
@@ -189,7 +256,19 @@ def run_search():
                     print(f"\n  {code}: {primary_en} ({cn_name}) — already done ({n_existing} ≥ {search_count}), skipped")
                     continue
                 else:
-                    print(f"\n  {code}: {primary_en} ({cn_name}) — updating ({n_existing} → {search_count})")
+                    # Quick count check: is n_existing already at PubMed ceiling?
+                    query_check = build_query(disease_names, issns)
+                    count_handle = Entrez.esearch(db="pubmed", term=query_check, retmax=0)
+                    count_result = Entrez.read(count_handle)
+                    count_handle.close()
+                    actual_count = int(count_result.get("Count", 0))
+                    if n_existing >= actual_count * 0.98:
+                        all_results[code] = existing
+                        total_papers += n_existing
+                        print(f"\n  {code}: {primary_en} ({cn_name}) — at PubMed ceiling ({n_existing} ≈ {actual_count} available), skipped")
+                        continue
+                    else:
+                        print(f"\n  {code}: {primary_en} ({cn_name}) — updating ({n_existing} → {search_count}, {actual_count:,} available)")
             except (json.JSONDecodeError, KeyError):
                 print(f"\n  {code}: checkpoint file corrupted, re-running...")
 
@@ -201,7 +280,16 @@ def run_search():
         query = build_query(disease_names, issns)
         print("  Searching...")
 
-        pmids = search_pmids(query, max_results=search_count)
+        # Quick count to determine if we need year-range splitting (>9,999 limit)
+        count_handle = Entrez.esearch(db="pubmed", term=query, retmax=0)
+        count_result = Entrez.read(count_handle)
+        count_handle.close()
+        pubmed_total = int(count_result.get("Count", 0))
+
+        if pubmed_total > 9999:
+            pmids = search_pmids_with_split(query, search_count, pubmed_total)
+        else:
+            pmids = search_pmids(query, max_results=search_count)
         print(f"  PMIDs found: {len(pmids)}")
 
         papers_all = []
