@@ -7,7 +7,8 @@ import time
 import os
 from config import (
     NCBI_EMAIL, NCBI_API_KEY, JOURNAL_ISSNS,
-    TCGA_CANCERS, EXTRA_JOURNALS, SEARCH_COUNT
+    TCGA_CANCERS, EXTRA_JOURNALS, SEARCH_COUNT,
+    SEARCH_COUNT_OVERRIDES
 )
 
 Entrez.email = NCBI_EMAIL
@@ -150,7 +151,7 @@ def run_search():
     os.makedirs("data", exist_ok=True)
     tag = os.getenv("PIPELINE_TAG", "").strip()
     suffix = f"_{tag}" if tag else ""
-    search_count = int(os.getenv("PIPELINE_SEARCH_COUNT", str(SEARCH_COUNT)))
+    env_search_count = os.getenv("PIPELINE_SEARCH_COUNT", "").strip()
 
     cancer_items = parse_selected_cancers()
     if not cancer_items:
@@ -161,31 +162,40 @@ def run_search():
 
     print(f"{'='*60}")
     print(f"  TCGA Search Started: {len(cancer_items)} cancer types")
-    print(f"  Max results per cancer: {search_count} | tag: {tag or 'default'}")
+    print(f"  Max results per cancer: {SEARCH_COUNT} (default, see SEARCH_COUNT_OVERRIDES) | tag: {tag or 'default'}")
     print(f"{'='*60}")
 
     for code, (disease_names, cn_name) in cancer_items:
         primary_en = disease_names[0]
         issns = list(dict.fromkeys(JOURNAL_ISSNS + EXTRA_JOURNALS.get(code, [])))
 
+        # Resolve per-cancer search count
+        if env_search_count:
+            search_count = int(env_search_count)
+        else:
+            search_count = SEARCH_COUNT_OVERRIDES.get(code, SEARCH_COUNT)
+
         output_file = f"data/papers_{code}{suffix}.json"
 
-        # Checkpoint: skip if already done
+        # Checkpoint: skip only if we already have enough papers
         if os.path.exists(output_file):
             try:
                 with open(output_file, "r", encoding="utf-8") as f:
                     existing = json.load(f)
-                all_results[code] = existing
-                n = len(existing.get("papers", []))
-                total_papers += n
-                print(f"\n  {code}: {primary_en} ({cn_name}) — already done ({n} papers), skipped")
-                continue
+                n_existing = len(existing.get("papers", []))
+                if n_existing >= search_count:
+                    all_results[code] = existing
+                    total_papers += n_existing
+                    print(f"\n  {code}: {primary_en} ({cn_name}) — already done ({n_existing} ≥ {search_count}), skipped")
+                    continue
+                else:
+                    print(f"\n  {code}: {primary_en} ({cn_name}) — updating ({n_existing} → {search_count})")
             except (json.JSONDecodeError, KeyError):
                 print(f"\n  {code}: checkpoint file corrupted, re-running...")
 
         print(f"\n{'='*60}")
         print(f"  {code}: {primary_en} ({cn_name})")
-        print(f"  Aliases: {len(disease_names)} | Journals: {len(issns)}")
+        print(f"  Aliases: {len(disease_names)} | Journals: {len(issns)} | Target: {search_count} papers")
         print(f"{'='*60}")
 
         query = build_query(disease_names, issns)

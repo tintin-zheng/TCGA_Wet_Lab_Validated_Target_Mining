@@ -7,7 +7,7 @@ from datetime import datetime
 
 import pandas as pd
 from collections import Counter
-from config import TARGET_COUNT, TCGA_CANCERS, DEEPSEEK_MODEL
+from config import TCGA_CANCERS, DEEPSEEK_MODEL
 from gene_mapper import GeneMapper
 
 
@@ -92,10 +92,7 @@ def run_integration():
         # 1. Filter wet lab papers
         wet_lab_papers = [r for r in extractions if r.get("has_wet_lab_validation")]
 
-        # 2. Cap paper count
-        if len(wet_lab_papers) > TARGET_COUNT:
-            wet_lab_papers = wet_lab_papers[:TARGET_COUNT]
-            print(f"  Capped to top {TARGET_COUNT} papers")
+        # 2. Use all wet-lab papers (no cap)
 
         # 3. Expand to target-disease associations
         for paper in wet_lab_papers:
@@ -365,7 +362,7 @@ def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer, mapper
     lines.append("## Configuration")
     lines.append("")
     lines.append(f"- **Model:** {DEEPSEEK_MODEL}")
-    lines.append(f"- **Targets per cancer cap:** {TARGET_COUNT}")
+    lines.append(f"- **Targets per cancer cap:** none (all wet-lab papers used)")
     lines.append(f"- **Output CSV:** `output/final_targets{suffix}.csv`")
     lines.append(f"- **Extraction source:** `data/extractions_all{suffix}.json`")
     lines.append("")

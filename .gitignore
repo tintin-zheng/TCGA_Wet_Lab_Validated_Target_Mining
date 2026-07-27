@@ -15,3 +15,6 @@ analysis/
 
 # macOS
 .DS_Store
+
+#backups
+backup*/

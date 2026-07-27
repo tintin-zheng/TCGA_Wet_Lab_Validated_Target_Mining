@@ -1,16 +1,30 @@
 # ============ API Configuration ============
-NCBI_EMAIL = "your_email@example.com"       # Replace with your email
-NCBI_API_KEY = ""                            # Optional, leave empty if not available
+NCBI_EMAIL = "your_email@example.com"  # Replace with your email
+NCBI_API_KEY = ""  # Optional, leave empty if not available
 
-DEEPSEEK_API_KEY = "sk-your-key-here"       # Get from platform.deepseek.com
+DEEPSEEK_API_KEY = "sk-your-key-here"  # Get from platform.deepseek.com
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
-DEEPSEEK_MODEL = "deepseek-chat"            # or deepseek-v4-pro / deepseek-reasoner
+DEEPSEEK_MODEL = "deepseek-chat"  # or deepseek-v4-pro / deepseek-reasoner
 
 # ============ Parameters ============
-SEARCH_COUNT = 200  # PubMed search count per cancer
-TARGET_COUNT = 200  # Max wet-lab validated papers kept per cancer
+SEARCH_COUNT = 400  # PubMed search count per cancer (default)
 
-# ============ 37 Q1 Journal ISSNs ============
+# ============ Per-Cancer Search Count Overrides ============
+SEARCH_COUNT_OVERRIDES = {
+    "BRCA": 800,   # 12,850 available
+    "COAD": 700,   # 7,884
+    "SKCM": 600,   # 5,723
+    "PRAD": 600,   # 5,270
+    "SARC": 500,   # 4,711
+    "LIHC": 500,   # 4,141
+    "LAML": 500,   # 3,959
+    "OV":   500,   # 3,445
+    "GBM":  500,   # 3,340
+    "PAAD": 500,   # 3,019
+}
+
+
+# ============ 41 Q1 Journal ISSNs ============
 JOURNAL_ISSNS = [
     "0028-0836",  # Nature
     "2375-2548",  # Science Advances
@@ -49,6 +63,10 @@ JOURNAL_ISSNS = [
     "0959-8049",  # European Journal of Cancer
     "1351-0088",  # Endocrine-Related Cancer
     "0021-972X",  # JCEM
+    "2059-3635",  # Signal Transduction and Targeted Therapy
+    "1350-9047",  # Cell Death & Differentiation
+    "0261-4189",  # EMBO Journal
+    "0890-9369",  # Genes & Development
 ]
 
 # ============ TCGA 33 Cancer Types ============
@@ -133,7 +151,9 @@ EXTRA_JOURNALS = {
         "1759-5029",  # Nature Reviews Nephrology
         "0085-2538",  # Kidney International
         "1046-6673",  # JASN
+        "1555-9041",  # CJASN
         # Pathology
+        "0002-9440",  # American Journal of Pathology
         "0893-3952",  # Modern Pathology
         "0147-5185",  # American Journal of Surgical Pathology
         "0022-3417",  # The Journal of Pathology
@@ -153,6 +173,7 @@ EXTRA_JOURNALS = {
         "1048-891X",  # International Journal of Gynecological Cancer
         "0002-9378",  # American Journal of Obstetrics and Gynecology
         "0029-7844",  # Obstetrics & Gynecology
+        "0002-9440",  # American Journal of Pathology
         # Pathology
         "0893-3952",  # Modern Pathology
         "0147-5185",  # American Journal of Surgical Pathology
@@ -169,5 +190,115 @@ EXTRA_JOURNALS = {
         "2059-7029",  # ESMO Open
         "2005-0380",  # Journal of Gynecologic Oncology
         "1347-9032",  # Cancer Science
+    ],
+    # ============ Newly Added Rare/Underserved Cancers ============
+    "ACC": [
+        # Endocrinology (adrenal-specific)
+        "1945-7189",  # Endocrine Reviews
+        "0804-4643",  # European Journal of Endocrinology
+        "1043-2760",  # Trends in Endocrinology & Metabolism
+        "1046-3976",  # Endocrine Pathology
+        "2041-4889",  # Cell Death & Disease
+        "1574-7891",  # Molecular Oncology
+        # Pathology (shared)
+        "0893-3952",  # Modern Pathology
+        "0147-5185",  # American Journal of Surgical Pathology
+        "0022-3417",  # The Journal of Pathology
+        # Translational Oncology (shared)
+        "1470-2045",  # The Lancet Oncology
+        "0304-3835",  # Cancer Letters
+        "1756-9966",  # Journal of Experimental & Clinical Cancer Research
+        "1541-7786",  # Molecular Cancer Research
+        "2326-6066",  # Cancer Immunology Research
+    ],
+    "LUSC": [
+        # Thoracic / Respiratory
+        "1556-0864",  # Journal of Thoracic Oncology
+        "2213-2600",  # The Lancet Respiratory Medicine
+        "1073-449X",  # American Journal of Respiratory and Critical Care Medicine
+        "0903-1936",  # European Respiratory Journal
+        "0012-3692",  # Chest
+        "0040-6376",  # Thorax
+        "0022-5223",  # The Journal of Thoracic and Cardiovascular Surgery
+        "1083-7159",  # The Oncologist
+        # Pathology (shared)
+        "0893-3952",  # Modern Pathology
+        "0147-5185",  # American Journal of Surgical Pathology
+        "0022-3417",  # The Journal of Pathology
+        # Translational Oncology (shared)
+        "1470-2045",  # The Lancet Oncology
+        "0304-3835",  # Cancer Letters
+        "1756-9966",  # Journal of Experimental & Clinical Cancer Research
+        "1541-7786",  # Molecular Cancer Research
+        "2326-6066",  # Cancer Immunology Research
+    ],
+    "TGCT": [
+        # Urology (testicular cancer domain)
+        "0302-2838",  # European Urology
+        "0022-5347",  # The Journal of Urology
+        "1759-4812",  # Nature Reviews Urology
+        "2588-8431",  # European Urology Oncology
+        "2405-4569",  # European Urology Focus
+        "2047-2919",  # Andrology
+        "1008-682X",  # Asian Journal of Andrology
+        "1470-1626",  # Reproduction
+        # Pathology (shared)
+        "0893-3952",  # Modern Pathology
+        "0147-5185",  # American Journal of Surgical Pathology
+        "0022-3417",  # The Journal of Pathology
+        # Translational Oncology (shared)
+        "1470-2045",  # The Lancet Oncology
+        "0304-3835",  # Cancer Letters
+        "1756-9966",  # Journal of Experimental & Clinical Cancer Research
+        "1541-7786",  # Molecular Cancer Research
+        "2326-6066",  # Cancer Immunology Research
+    ],
+    "UVM": [
+        # Ophthalmology (uveal/ocular melanoma domain)
+        "0161-6420",  # Ophthalmology
+        "2168-6165",  # JAMA Ophthalmology
+        "0002-9394",  # American Journal of Ophthalmology
+        "1350-9462",  # Progress in Retinal and Eye Research
+        # Pathology (shared)
+        "0893-3952",  # Modern Pathology
+        "0147-5185",  # American Journal of Surgical Pathology
+        "0022-3417",  # The Journal of Pathology
+        # Translational Oncology (shared)
+        "1470-2045",  # The Lancet Oncology
+        "0304-3835",  # Cancer Letters
+        "1756-9966",  # Journal of Experimental & Clinical Cancer Research
+        "1541-7786",  # Molecular Cancer Research
+        "2326-6066",  # Cancer Immunology Research
+    ],
+    "THYM": [
+        # Thoracic (thymic tumors domain)
+        "1556-0864",  # Journal of Thoracic Oncology
+        "0022-5223",  # The Journal of Thoracic and Cardiovascular Surgery
+        # Pathology (shared)
+        "0893-3952",  # Modern Pathology
+        "0147-5185",  # American Journal of Surgical Pathology
+        "0022-3417",  # The Journal of Pathology
+        # Translational Oncology (shared)
+        "1470-2045",  # The Lancet Oncology
+        "0304-3835",  # Cancer Letters
+        "1756-9966",  # Journal of Experimental & Clinical Cancer Research
+        "1541-7786",  # Molecular Cancer Research
+        "2326-6066",  # Cancer Immunology Research
+    ],
+    "READ": [
+        # Colorectal Surgery
+        "0003-4932",  # Annals of Surgery
+        "0007-1323",  # British Journal of Surgery
+        "2168-6254",  # JAMA Surgery
+        # Pathology (shared)
+        "0893-3952",  # Modern Pathology
+        "0147-5185",  # American Journal of Surgical Pathology
+        "0022-3417",  # The Journal of Pathology
+        # Translational Oncology (shared)
+        "1470-2045",  # The Lancet Oncology
+        "0304-3835",  # Cancer Letters
+        "1756-9966",  # Journal of Experimental & Clinical Cancer Research
+        "1541-7786",  # Molecular Cancer Research
+        "2326-6066",  # Cancer Immunology Research
     ],
 }
