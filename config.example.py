@@ -11,16 +11,41 @@ SEARCH_COUNT = 400  # PubMed search count per cancer (default)
 
 # ============ Per-Cancer Search Count Overrides ============
 SEARCH_COUNT_OVERRIDES = {
-    "BRCA": 2000,  # 12,850 available
-    "COAD": 2000,  # 7,884
-    "SKCM": 2000,  # 5,723
-    "PRAD": 2000,  # 5,270
-    "SARC": 500,   # 4,711
-    "LIHC": 500,   # 4,141
-    "LAML": 500,   # 3,959
-    "OV":   500,   # 3,445
-    "GBM":  500,   # 3,340
-    "PAAD": 500,   # 3,019
+    "BRCA": 13000, # 12,850 — full sweep
+    "COAD": 8000,  # 7,885 — full sweep
+    "SKCM": 5800,  # 5,723 — full sweep
+    "PRAD": 5300,  # 5,270 — full sweep
+    "SARC": 4800,  # 4,711 — full sweep
+    "LIHC": 4200,  # 4,141 — full sweep
+    "LAML": 4000,  # 3,959 — full sweep
+    "OV":   3500,  # 3,445 — full sweep
+    "GBM":  3400,  # 3,340 — full sweep
+    "PAAD": 3100,  # 3,019 — full sweep
+    # --- Full sweeps (2,050–500 papers) ---
+    "STAD": 2100,  # 2,050
+    "BLCA": 1400,  # 1,376
+    "HNSC": 1300,  # 1,272
+    "THCA": 1300,  # 1,223
+    "LUAD": 1100,  # 1,058
+    "CESC": 1000,  # 901
+    "DLBC":  800,  # 791
+    "UCEC":  700,  # 699
+    "CHOL":  600,  # 548
+    "ESCA":  500,  # 497
+    # --- <500 full sweeps ---
+    "KIRC":  500,  # 469
+    "PCPG":  500,  # 426
+    "MESO":  500,  # 401
+    "LGG":   400,  # 335
+    "UVM":   300,  # 267
+    "THYM":  300,  # 251
+    "READ":  300,  # 247
+    "ACC":   200,  # 197
+    "KIRP":  200,  # 196
+    "LUSC":  200,  # 166
+    "TGCT":  200,  # 164
+    "KICH":  200,  # 109
+    "UCS":   200,  # 103
 }
 
 
