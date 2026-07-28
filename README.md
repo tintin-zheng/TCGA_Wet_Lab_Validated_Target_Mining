@@ -40,7 +40,7 @@ cp config.example.py config.py
 | `PIPELINE_CANCERS` | Run specific cancer types, e.g. `ACC,BRCA,LIHC` | All 33 |
 | `PIPELINE_TAG` | Suffix for output files (isolates runs) | None |
 | `PIPELINE_MAX_CANCERS` | Limit to first N cancer types | All |
-| `PIPELINE_PAPERS_PER_CANCER` | Cap papers per cancer in Step 2 (0 = no further cap, all from Step 1) | 0 (up to 200 from Step 1) |
+| `PIPELINE_PAPERS_PER_CANCER` | Cap papers per cancer in Step 2 (0 = no cap, all from Step 1) | 0 (up to 13,000 for high-volume cancers) |
 | `EXTRACT_MAX_WORKERS` | Thread count for LLM extraction | 300 |
 | `EXTRACT_MAX_RETRIES` | Max API retries | 3 |
 | `SKIP_GENE_MAPPING` | Set to `true` to skip HGNC download & gene mapping | false |
@@ -53,9 +53,9 @@ cp config.example.py config.py
 # Step 0: Pre-survey (optional)
 python step_0.py
 
-# Step 1: Search PubMed
+# Step 1: Search PubMed (auto year-range splitting for cancers >9,999 papers)
 python step1_search.py
-# Output: data/papers_all.json  (one JSON per cancer + combined)
+# Output: data/papers_{CODE}.json + data/papers_all.json
 
 # Step 2: LLM Target Extraction
 python step2_extract.py
@@ -147,5 +147,10 @@ This report persists after the terminal session ends and renders natively on Git
 - `config.py` contains real API keys and is gitignored. Use `config.example.py` as a template.
 - The `data/` and `output/` directories are gitignored — generated at runtime.
 - NCBI Entrez API requires your email; add an API key for higher rate limits.
-- DeepSeek extraction for all 33 cancers varies by cancer: 400-800 papers for most, up to 2,000 for high-volume cancers (BRCA, COAD, SKCM, PRAD). With 300 threads, the full run takes ~20-40 minutes for incremental updates.
+- **Full sweep:** All 33 cancers are now mined exhaustively — from ~100 papers (KICH, UCS) to ~13,000 (BRCA). Total papers screened: ~67,000, yielding ~32,000 target-disease associations across ~14,000 unique targets.
+- **PubMed 9,999 limit:** NCBI esearch caps at 9,999 PMIDs. For cancers exceeding this (BRCA, COAD), Step 1 automatically splits the search by year ranges to retrieve the complete literature.
+- **Journal coverage:** 41 Q1 journals as baseline, plus specialty journals for 9 rare cancers (ACC, LUSC, TGCT, UVM, THYM, READ, KIRP, KICH, UCS) via `EXTRA_JOURNALS`.
+- **No TARGET_COUNT cap:** Step 3 uses all wet-lab papers identified by Step 2 — no artificial limit on papers per cancer.
+- **Concurrency:** Default 300 threads. DeepSeek API supports up to 500.
+- **Full results:** See `results/` folder for the final extraction data (33 individual JSON files) + target CSV.
 - **Gene standardization:** On first run, Step 3 downloads the HGNC complete set (~32 MB) to `data/hgnc_complete_set.json`. This is a one-time download. Set `SKIP_GENE_MAPPING=true` to skip this step for quick test runs.
