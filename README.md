@@ -147,7 +147,7 @@ This report persists after the terminal session ends and renders natively on Git
 - `config.py` contains real API keys and is gitignored. Use `config.example.py` as a template.
 - The `data/` and `output/` directories are gitignored — generated at runtime.
 - NCBI Entrez API requires your email; add an API key for higher rate limits.
-- **Full sweep:** All 33 cancers are now mined exhaustively — from ~100 papers (KICH, UCS) to ~13,000 (BRCA). Total papers screened: ~67,000, yielding ~32,000 target-disease associations across ~14,000 unique targets.
+- **Full sweep:** All 33 cancers are now mined exhaustively — from ~100 papers (KICH, UCS) to ~12,800 (BRCA). Total papers screened: ~67,000, yielding ~32,000 target-disease associations across ~14,000 unique targets.
 - **PubMed 9,999 limit:** NCBI esearch caps at 9,999 PMIDs. For cancers exceeding this (BRCA, COAD), Step 1 automatically splits the search by year ranges to retrieve the complete literature.
 - **Journal coverage:** 41 Q1 journals as baseline, plus specialty journals for 9 rare cancers (ACC, LUSC, TGCT, UVM, THYM, READ, KIRP, KICH, UCS) via `EXTRA_JOURNALS`.
 - **No TARGET_COUNT cap:** Step 3 uses all wet-lab papers identified by Step 2 — no artificial limit on papers per cancer.
