@@ -1,0 +1,4349 @@
+[
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "39580524",
+    "title": "Proteogenomic analysis reveals non-small cell lung cancer subtypes predicting chromosome instability, and tumor microenvironment.",
+    "year": "2024",
+    "journal": "Nature communications",
+    "doi": "10.1038/s41467-024-54434-4"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "advanced squamous non-small-cell lung cancer",
+    "validated_targets": [],
+    "pmid": "38181795",
+    "title": "A global phase 3 study of serplulimab plus chemotherapy as first-line treatment for advanced squamous non-small-cell lung cancer (ASTRUM-004).",
+    "year": "2024",
+    "journal": "Cancer cell",
+    "doi": "10.1016/j.ccell.2023.12.004"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung adenocarcinoma and squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "27158780",
+    "title": "Distinct patterns of somatic genome alterations in lung adenocarcinomas and squamous cell carcinomas.",
+    "year": "2016",
+    "journal": "Nature genetics",
+    "doi": "10.1038/ng.3564"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "22960745",
+    "title": "Comprehensive genomic characterization of squamous cell lung cancers.",
+    "year": "2012",
+    "journal": "Nature",
+    "doi": "10.1038/nature11404"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "34358469",
+    "title": "A proteogenomic portrait of lung squamous cell carcinoma.",
+    "year": "2021",
+    "journal": "Cell",
+    "doi": "10.1016/j.cell.2021.07.016"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "cancer (multiple tumor types)",
+    "validated_targets": [],
+    "pmid": "25500544",
+    "title": "The landscape and therapeutic relevance of cancer-associated transcript fusions.",
+    "year": "2015",
+    "journal": "Oncogene",
+    "doi": "10.1038/onc.2014.406"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Genetic ablation of NSD3 attenuated tumor growth and extended survival in mouse LUSC models; NSD3(T1232A) variant accelerated tumorigenesis; xenografted human LUSC cell lines and patient-derived xenografts validated NSD3 oncogenicity and sensitivity to bromodomain inhibition.",
+    "validation_methods": [
+      "genetic ablation",
+      "overexpression",
+      "xenograft",
+      "patient-derived xenograft",
+      "drug treatment (bromodomain inhibitor)"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "NSD3",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Ablation of NSD3 attenuated tumor growth and extended survival in mouse LUSC model; expression of hyperactive NSD3(T1232A) variant accelerated tumorigenesis and decreased survival; NSD3 promoted transformation of human tracheobronchial cells and growth of xenografted human LUSC cell lines with 8p11-12 amplification; NSD3-depleted patient-derived xenografts from primary LUSCs showed attenuated neoplastic growth; NSD3-dependent tumors were hypersensitive to bromodomain inhibition.",
+        "model_type": "mixed",
+        "specific_model_name": "mouse model of LUSC, human tracheobronchial cells, xenografted human LUSC cell lines, patient-derived xenograft from primary LUSCs"
+      }
+    ],
+    "pmid": "33536620",
+    "title": "Elevated NSD3 histone methylation activity drives squamous cell lung cancer.",
+    "year": "2021",
+    "journal": "Nature",
+    "doi": "10.1038/s41586-020-03170-y"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "41945491",
+    "title": "ADC Target Profiling in NSCLC: Generalizable AI Separates TROP-2 and cMET Phenotypes.",
+    "year": "2026",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-25-4513"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Selective inhibitor ESI-09 treatment in patient-derived xenograft models significantly suppressed tumor growth, validating RAPGEF3 as a therapeutic target.",
+    "validation_methods": [
+      "drug treatment",
+      "patient-derived xenograft (PDX) model"
+    ],
+    "disease": "lung squamous cell carcinoma (basal-subtype)",
+    "validated_targets": [
+      {
+        "target_name": "RAPGEF3",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Selective inhibitor ESI-09 significantly suppressed tumor growth in PDX models without notable toxicity",
+        "model_type": "animal model",
+        "specific_model_name": "patient-derived xenograft (PDX) models"
+      }
+    ],
+    "pmid": "40781157",
+    "title": "Identification of RAPGEF3 as the therapeutic vulnerability of basal-subtype lung squamous cell carcinoma.",
+    "year": "2025",
+    "journal": "Oncogene",
+    "doi": "10.1038/s41388-025-03532-8"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Ex vivo human and mouse Treg cell overexpression studies and in vivo mouse tumor models demonstrated that SOAT2 overexpression enhances Treg suppressive function via SREBP2-HMGCR-GGPP-mediated cholesterol metabolism, thereby reducing CD8+ T cell anti-tumor immunity.",
+    "validation_methods": [
+      "Ex vivo overexpression experiments",
+      "In vivo mouse tumor model",
+      "Cholesterol metabolism pathway analysis"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "SOAT2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "SOAT2 overexpression in Treg cells activated the SREBP2-HMGCR-GGPP pathway, enhancing cholesterol metabolism and Treg suppressive function, which reduced CD8+ T cell proliferation, migration, homeostasis, and anti-tumor immunity.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "39805872",
+    "title": "Increased SOAT2 expression in aged regulatory T cells is associated with altered cholesterol metabolism and reduced anti-tumor immunity.",
+    "year": "2025",
+    "journal": "Nature communications",
+    "doi": "10.1038/s41467-025-56002-w"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Mechanistic studies demonstrate that NRF2 directly mediates PD-L1 constitutive expression in lung squamous cell carcinoma.",
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "NFE2L2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "NRF2 directly mediates PD-L1 constitutive expression independent of adaptive PD-L1 regulation in LUSC.",
+        "model_type": "unknown",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "38052215",
+    "title": "Tumor-immune microenvironment and NRF2 associate with clinical efficacy of PD-1 blockade combined with chemotherapy in lung squamous cell carcinoma.",
+    "year": "2023",
+    "journal": "Cell reports. Medicine",
+    "doi": "10.1016/j.xcrm.2023.101302"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "29279354",
+    "title": "Germinal Centers Determine the Prognostic Relevance of Tertiary Lymphoid Structures and Are Impaired by Corticosteroids in Lung Squamous Cell Carcinoma.",
+    "year": "2018",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-17-1987"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "29617660",
+    "title": "Genomic, Pathway Network, and Immunologic Features Distinguishing Squamous Carcinomas.",
+    "year": "2018",
+    "journal": "Cell reports",
+    "doi": "10.1016/j.celrep.2018.03.063"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "KLF4 manipulation promoted a KRT13+ hillock-like state and conferred resistance to oxidative stress and platinum-based chemotherapy in vitro.",
+    "validation_methods": [
+      "organoid culture",
+      "in vitro drug resistance assay",
+      "genetic manipulation"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "KLF4",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "KLF4 promoted a KRT13+ hillock-like tumor cell state and contributed to resistance against oxidative stress and platinum-based chemotherapy in vitro.",
+        "model_type": "mixed",
+        "specific_model_name": "SOX2-driven mouse models, organoids, and lung squamous cell carcinoma cells"
+      }
+    ],
+    "pmid": "42314152",
+    "title": "KLF4 Promotes a KRT13+ Hillock-Like State in Lung Squamous Cell Carcinoma.",
+    "year": "2026",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-26-0531"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "41402247",
+    "title": "Gene signatures characterizing driver mutations in lung squamous carcinoma are predictive of the progression of pre-cancer lesions.",
+    "year": "2025",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.70269"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Genetically engineered organoids revealed KLF5 activation drives stepwise transformation of normal airway epithelium into lung squamous cell carcinoma; inhibition of ribosome biogenesis and oxidative phosphorylation attenuated KLF5-driven malignant progression.",
+    "validation_methods": [
+      "genetically engineered organoid model",
+      "pathway inhibition assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "KLF5",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "KLF5 activation in genetically engineered organoids drove morphologic and molecular transformation of normal airway epithelium toward LUSC by remodeling protein biosynthesis and energy metabolism.",
+        "model_type": "organoid model",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "ribosome biogenesis",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inhibition of ribosome biogenesis attenuated the malignant progression of LUSC driven by KLF5.",
+        "model_type": "organoid model",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "oxidative phosphorylation",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inhibition of oxidative phosphorylation attenuated the malignant progression of LUSC driven by KLF5.",
+        "model_type": "organoid model",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "41512183",
+    "title": "KLF5 Activation Promotes Malignant Transformation to Drive Development of Lung Squamous Cell Carcinoma.",
+    "year": "2026",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-25-2139"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "NSUN4 overexpression and knockdown in LUSC cells confirmed oncogenic effects; USP8 deubiquitination of NSUN4 validated by co-immunoprecipitation and ubiquitination assays; NSUN4 and YBX1 cooperatively drive pathogenesis via m5C methylation of DHCR24 3'UTR as shown by RNA bisulfite sequencing; high NSUN4 and DHCR24 expression correlates with poor survival in patient tissues.",
+    "validation_methods": [
+      "knockdown",
+      "overexpression",
+      "co-immunoprecipitation",
+      "ubiquitination assay",
+      "RNA bisulfite sequencing"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "NSUN4",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Overexpression of NSUN4 promoted oncogenic effects, and knockdown reduced m5C sites and inhibited pathogenesis in LUSC cells.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "USP8",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "USP8 stabilized NSUN4 by inhibiting its K11-linked polyubiquitination, as demonstrated by deubiquitination assays.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "YBX1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "YBX1 cooperated with NSUN4 to target m5C methylation sites in the 3' UTR of DHCR24, driving LUSC pathogenesis.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "DHCR24",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "DHCR24 is a downstream target of NSUN4/YBX1-mediated m5C methylation; its high expression is associated with poor survival and contributes to LUSC pathogenesis.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "40815570",
+    "title": "USP8 deubiquitylation-boosted NSUN4 potentiates lung squamous cell carcinoma progression by m5C methylation of DHCR24.",
+    "year": "2025",
+    "journal": "Cell reports",
+    "doi": "10.1016/j.celrep.2025.116158"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "early-stage EGFR-mutant non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "35838647",
+    "title": "Clinical, Pathologic, and Molecular Prognostic Factors in Patients with Early-Stage EGFR-Mutant NSCLC.",
+    "year": "2022",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-22-0879"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "ZAK inhibitor iZAK2 alone or with anti-PD-1/STING agonist suppressed tumor growth in mouse lung cancer and LUSC PDX models; blocking glycolysis abolished cytoplasmic DNA-driven tumor-promoting activity in LUSC cells.",
+    "validation_methods": [
+      "Inhibitor treatment (iZAK2)",
+      "Glycolysis inhibition",
+      "Mouse lung cancer models",
+      "Patient-derived xenograft (PDX)",
+      "Cell viability assay",
+      "Motility assay",
+      "Chemoresistance assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "ZAK",
+        "target_type": "protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "ZAK inhibitor iZAK2 alone or combined with anti-PD-1 antibody or STING agonist suppressed tumor growth and improved survival in mouse lung cancer models and human LUSC PDX models.",
+        "model_type": "animal model and patient-derived xenograft",
+        "specific_model_name": "mouse lung cancer models, human LUSC patient-derived xenografts"
+      },
+      {
+        "target_name": "Glycolysis",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Blocking glycolysis abolished the tumor-promoting activity of cytoplasmic DNA in LUSC cells.",
+        "model_type": "cell line",
+        "specific_model_name": "LUSC cells"
+      }
+    ],
+    "pmid": "38199791",
+    "title": "DNA-PK-Mediated Cytoplasmic DNA Sensing Stimulates Glycolysis to Promote Lung Squamous Cell Carcinoma Malignancy and Chemoresistance.",
+    "year": "2024",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-23-0744"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung adenocarcinoma",
+    "validated_targets": [],
+    "pmid": "32461698",
+    "title": "Geospatial immune variability illuminates differential evolution of lung adenocarcinoma.",
+    "year": "2020",
+    "journal": "Nature medicine",
+    "doi": "10.1038/s41591-020-0900-x"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Ectopic expression of FGFR2 mutations in NIH 3T3 cells revealed constitutive activation and oncogenicity; inhibition of FGFR2 kinase activity in endometrial carcinoma cell lines with mutations suppressed transformation and survival.",
+    "validation_methods": [
+      "ectopic expression",
+      "kinase inhibition assay",
+      "cell transformation assay",
+      "survival assay"
+    ],
+    "disease": "endometrial carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "FGFR2",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inhibition of FGFR2 kinase activity in endometrial carcinoma cell lines bearing FGFR2 mutations inhibited transformation and survival.",
+        "model_type": "cell line",
+        "specific_model_name": "NIH 3T3, endometrial carcinoma cell lines"
+      }
+    ],
+    "pmid": "18552176",
+    "title": "Drug-sensitive FGFR2 mutations in endometrial carcinoma.",
+    "year": "2008",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.0803379105"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "NDUFA4L2 silencing in LUSC cells suppressed growth and induced apoptosis via mitoROS accumulation; miR-183-5p overexpression inhibited tumor survival in vitro and in vivo by targeting NDUFA4L2.",
+    "validation_methods": [
+      "siRNA/shRNA silencing",
+      "miRNA overexpression",
+      "qPCR",
+      "Western blot",
+      "immunohistochemistry",
+      "flow cytometry",
+      "mitochondrial ROS measurement",
+      "xenograft mouse model"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "NDUFA4L2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "NDUFA4L2 silencing suppressed LUSC cell growth and enhanced apoptosis by inducing mitoROS accumulation.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "miR-183-5p",
+        "target_type": "miRNA",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "MiR-183-5p significantly induced mitoROS production and suppressed LUSC survival through negatively regulating NDUFA4L2 in vitro and in vivo.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "39154121",
+    "title": "MiR-183-5p inhibits lung squamous cell carcinoma survival through disrupting hypoxia adaptation mediated by HIF-1α/NDUFA4L2 axis.",
+    "year": "2024",
+    "journal": "Oncogene",
+    "doi": "10.1038/s41388-024-03129-7"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Pioglitazone treatment in NTCU-induced murine lung squamous cell carcinoma model, validated by histology, qPCR, IHC and IF, showing reduction of squamous lesions and modulation of EMT and basal cell markers.",
+    "validation_methods": [
+      "histology (H&E and KRT5 staining)",
+      "qPCR",
+      "immunohistochemistry",
+      "immunofluorescence"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "PPARG",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Protective",
+        "experimental_detail": "Pioglitazone treatment activated PPARγ leading to reduced squamous lesions, decreased airway basal cells, and promotion of epithelial phenotype in NTCU-induced murine lung SCC model.",
+        "model_type": "animal model",
+        "specific_model_name": "NTCU-induced murine lung squamous cell carcinoma model (FVB/N mice)"
+      }
+    ],
+    "pmid": "35830207",
+    "title": "PPARgamma agonism inhibits progression of premalignant lesions in a murine lung squamous cell carcinoma model.",
+    "year": "2022",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.34210"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "24323028",
+    "title": "Integrative and comparative genomic analysis of lung squamous cell carcinomas in East Asian patients.",
+    "year": "2014",
+    "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+    "doi": "10.1200/JCO.2013.50.8556"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "25189482",
+    "title": "Lung squamous cell carcinomas with basaloid histology represent a specific molecular entity.",
+    "year": "2014",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-14-0459"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "25739673",
+    "title": "NRF2 Pathway Activation and Adjuvant Chemotherapy Benefit in Lung Squamous Cell Carcinoma.",
+    "year": "2015",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-14-2206"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Rb inactivation combined with AKT/MYC activation enhanced squamous features in genetically engineered in vivo models; MET pathway upregulation was observed and combined EGFR/MET inhibition suppressed tumor growth in patient-derived xenograft models.",
+    "validation_methods": [
+      "Genetically engineered in vivo model",
+      "Patient-derived xenograft model",
+      "EGFR/MET inhibition treatment"
+    ],
+    "disease": "EGFR-mutant lung adenocarcinoma with squamous transformation",
+    "validated_targets": [
+      {
+        "target_name": "Rb pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Rb inactivation in combination with AKT and MYC activation enhanced acquisition of lung squamous cell carcinoma features in genetically engineered human in vivo models.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "MET",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "MET pathway upregulation identified during transformation; combined EGFR and MET inhibition suppressed tumor growth in patient-derived xenograft models of LUSC transformation.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "42308331",
+    "title": "Clinicogenomic analysis of <i>EGFR</i>-mutant lung tumors identifies Rb pathway inactivation as a hallmark of squamous transformation.",
+    "year": "2026",
+    "journal": "Science translational medicine",
+    "doi": "10.1126/scitranslmed.aea4881"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Clinically relevant mutations were confirmed in PDX tumors and treatment studies recapitulated expected responses to targeted therapies.",
+    "validation_methods": [
+      "mutation profiling",
+      "drug treatment efficacy study"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "36069866",
+    "title": "A Genomically and Clinically Annotated Patient-Derived Xenograft Resource for Preclinical Research in Non-Small Cell Lung Cancer.",
+    "year": "2022",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-22-0948"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "melanoma, lung squamous cell carcinoma, bladder urothelial carcinoma, breast invasive carcinoma, colorectal adenocarcinoma",
+    "validated_targets": [],
+    "pmid": "29917141",
+    "title": "Tumor CDKN2A-Associated JAK2 Loss and Susceptibility to Immunotherapy Resistance.",
+    "year": "2018",
+    "journal": "Journal of the National Cancer Institute",
+    "doi": "10.1093/jnci/djx271"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "In LUSC cell lines, xenografts, and PDX models, mTOR inhibitor TAK228 induced macropinocytosis, coinhibition of mTOR and macropinocytosis reduced tumor growth; angiogenesis inhibition combined with mTOR/macropinocytosis inhibitors reduced growth; prolonged TAK228 and glutaminase inhibitor CB-839 treatment led to vascularization upregulation and tumor rebound.",
+    "validation_methods": [
+      "tumor growth assay",
+      "amino acid uptake measurement",
+      "vascularization assessment",
+      "small-molecule inhibitor treatment"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "MTOR",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "mTOR inhibitor TAK228 treatment in LUSC models led to adaptive macropinocytosis; coinhibition of mTOR and macropinocytosis reduced tumor growth.",
+        "model_type": "mixed",
+        "specific_model_name": "LUSC cell lines, xenografts, PDX models"
+      },
+      {
+        "target_name": "macropinocytosis",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Null",
+        "experimental_detail": "LUSC cells adapt to mTOR inhibition by upregulating macropinocytosis, enhancing nutrient uptake; coinhibition with mTOR inhibitor reduced tumor growth.",
+        "model_type": "mixed",
+        "specific_model_name": "LUSC cell lines, xenografts, PDX models"
+      },
+      {
+        "target_name": "angiogenesis",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Null",
+        "experimental_detail": "Angiogenesis limits efficacy of mTOR/macropinocytosis inhibition; inhibiting angiogenesis combined with those inhibitors reduced tumor growth in xenografts and PDXs.",
+        "model_type": "animal model",
+        "specific_model_name": "LUSC xenografts, PDX"
+      },
+      {
+        "target_name": "GLS",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Prolonged treatment with TAK228 and glutaminase inhibitor CB-839 led to upregulation of vascularization and rebound in tumor growth.",
+        "model_type": "animal model",
+        "specific_model_name": "LUSC PDX"
+      }
+    ],
+    "pmid": "41364715",
+    "title": "Macropinocytosis and Vascularization Determine Response to mTOR Inhibitors in Lung Squamous Cell Carcinoma.",
+    "year": "2026",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-25-0921"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "31243362",
+    "title": "Immune evasion before tumour invasion in early lung squamous carcinogenesis.",
+    "year": "2019",
+    "journal": "Nature",
+    "doi": "10.1038/s41586-019-1330-0"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Conditional deletion of Crb3 in mouse airway epithelium showed that loss of polarity promotes precancerous lesions via YAP/TAZ and NRG1-ERBB signaling; therapeutic ERBB targeting suppressed precancerous cell growth.",
+    "validation_methods": [
+      "Conditional knockout",
+      "Drug treatment",
+      "Transcriptional profiling",
+      "Human tissue analysis"
+    ],
+    "disease": "precancerous airway lesions, lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "CRB3",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Conditional deletion of Crb3 in adult luminal airway epithelium promoted YAP/TAZ activation and precancerous lesion formation.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "NRG1",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "NRG1 identified as a YAP/TAZ transcriptional target; ERBB receptor inhibition suppressed NRG1-driven precancerous cell growth.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "ERBB receptors",
+        "target_type": "protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Therapeutic targeting of ERBB receptors prevented and treated precancerous cell growth.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "33903236",
+    "title": "Aberrant epithelial polarity cues drive the development of precancerous airway lesions.",
+    "year": "2021",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.2019282118"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": true,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "28548087",
+    "title": "The distinct metabolic phenotype of lung squamous cell carcinoma defines selective vulnerability to glycolytic inhibition.",
+    "year": "2017",
+    "journal": "Nature communications",
+    "doi": "10.1038/ncomms15503"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "bronchial premalignant lesions (lung squamous cell carcinoma precursors)",
+    "validated_targets": [],
+    "pmid": "31015447",
+    "title": "Molecular subtyping reveals immune alterations associated with progression of bronchial premalignant lesions.",
+    "year": "2019",
+    "journal": "Nature communications",
+    "doi": "10.1038/s41467-019-09834-2"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Forced expression of TP63 in neural LUSC cells downregulated POU3F2 and induced classical squamous lineage features with increased ErbB/Akt and MAPK-ERK pathway activities.",
+    "validation_methods": [
+      "overexpression",
+      "expression analysis",
+      "pathway activity assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "TP63",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Null",
+        "experimental_detail": "Forced expression of TP63 in neural LUSC cells downregulated POU3F2 (Brn2) expression and induced classical squamous lineage features with increased ErbB/Akt and MAPK-ERK pathway activities.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "31551362",
+    "title": "Epigenomic Profiling Discovers Trans-lineage SOX2 Partnerships Driving Tumor Heterogeneity in Lung Squamous Cell Carcinoma.",
+    "year": "2019",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-19-2132"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Mouse tumor cell lines with manipulated PD-L1/PD-L2 expression revealed that PD-L2 alone or with PD-L1 suppressed tumor-specific CD8+ T cells and caused resistance to anti-PD-L1 mAb, reversed by anti-PD-1 or combined anti-PD-L2 mAb; human IHC confirmed PD-L2 expression correlates with CD8+ T-cell infiltration in RCC and LUSC.",
+    "validation_methods": [
+      "cell line generation",
+      "animal tumor model",
+      "flow cytometry",
+      "immunohistochemistry"
+    ],
+    "disease": "renal cell carcinoma and lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "PDCD1LG2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "PD-L2 expression in mouse tumor cells suppressed tumor antigen-specific CD8+ T cells and mediated resistance to anti-PD-L1 mAb, overcome by anti-PD-1 or anti-PD-L2 mAb; clinical IHC association with antitumor immune responses.",
+        "model_type": "mixed",
+        "specific_model_name": "mouse tumor cell lines, patient tissues (RCC, LUSC)"
+      },
+      {
+        "target_name": "CD274",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "PD-L1 expression contributed to immune evasion; anti-PD-L1 mAb alone failed when PD-L2 co-expressed, but antitumor immunity was restored by anti-PD-1 or combined PD-L1/PD-L2 blockade.",
+        "model_type": "mixed",
+        "specific_model_name": "mouse tumor cell lines, patient tissues (RCC, LUSC)"
+      }
+    ],
+    "pmid": "31076547",
+    "title": "Immune Suppression by PD-L2 against Spontaneous and Treatment-Related Antitumor Immunity.",
+    "year": "2019",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-18-3991"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Tgfbr2 knockout in KrasG12D mice led to metastatic lung SCC; ERK inhibition cooperated with SMAD4 loss to upregulate SOX2 and drive SCC formation in Smad4fl/fl;KrasG12D mice.",
+    "validation_methods": [
+      "gene knockout",
+      "pharmacological inhibition",
+      "animal model",
+      "gene expression analysis",
+      "histopathology"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "TGFBR2",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Loss of Tgfbr2 in KrasG12D mice led to predominant lung SCC development with high penetrance and extensive metastases.",
+        "model_type": "animal model",
+        "specific_model_name": "KrasG12D mice (Tgfbr2 knockout)"
+      },
+      {
+        "target_name": "SMAD4",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Loss of Smad4 alone did not drive lung SCC, but combined with ERK inhibition in Smad4fl/fl;KrasG12D mice led to extensive lung SCC.",
+        "model_type": "animal model",
+        "specific_model_name": "Smad4fl/fl;KrasG12D mice"
+      },
+      {
+        "target_name": "MAPK1",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Low levels of phosphorylated ERK2 (MAPK1) were associated with lung SCC; ERK inhibition promoted SCC formation in cooperation with SMAD4 loss.",
+        "model_type": "animal model",
+        "specific_model_name": "Smad4fl/fl;KrasG12D mice"
+      },
+      {
+        "target_name": "MAPK3",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Low levels of phosphorylated ERK1 (MAPK3) were associated with lung SCC; ERK inhibition promoted SCC formation in cooperation with SMAD4 loss.",
+        "model_type": "animal model",
+        "specific_model_name": "Smad4fl/fl;KrasG12D mice"
+      },
+      {
+        "target_name": "SOX2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inhibition of phosphorylated ERK1/2 significantly upregulated SOX2 expression; SOX2 upregulation cooperated with SMAD4 repression to drive lung SCC.",
+        "model_type": "unknown",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "TGFBR2/ERK-SMAD4/SOX2 signaling",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogenic",
+        "experimental_detail": "Dysregulated TGFBR2/ERK-SMAD4/SOX2 signaling drives lung SCC formation, with loss of TGFBR2 and low p-ERK1/2 cooperating with SMAD4 loss to upregulate SOX2.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "31209059",
+    "title": "Dysregulated Tgfbr2/ERK-Smad4/SOX2 Signaling Promotes Lung Squamous Cell Carcinoma Formation.",
+    "year": "2019",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-19-0161"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "SOX2 overexpression in primary human bronchial epithelial cells initiated early preinvasive LUSC stages; cooperation with KEAP1 loss and PI3K pathway alterations drove aggressive phenotypes with invasive properties.",
+    "validation_methods": [
+      "Isogenic cell line generation with defined genetic alterations",
+      "Invasion assay",
+      "Biomarker expression analysis"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "SOX2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "SOX2 overexpression in hBECs initiated early preinvasive LUSC stages.",
+        "model_type": "cell line",
+        "specific_model_name": "Primary human bronchial epithelial cells"
+      },
+      {
+        "target_name": "PI3K pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "PI3K pathway alteration (via PTEN) cooperated with SOX2 to drive aggressive LUSC phenotypes.",
+        "model_type": "cell line",
+        "specific_model_name": "Primary human bronchial epithelial cells"
+      },
+      {
+        "target_name": "KEAP1",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "KEAP1 loss cooperated with SOX2 overexpression and PI3K pathway alterations to drive aggressive LUSC phenotypes.",
+        "model_type": "cell line",
+        "specific_model_name": "Primary human bronchial epithelial cells"
+      }
+    ],
+    "pmid": "40185723",
+    "title": "A human model to deconvolve genotype-phenotype causations in lung squamous cell carcinoma.",
+    "year": "2025",
+    "journal": "Nature communications",
+    "doi": "10.1038/s41467-025-58343-y"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "shRNA knockdown of SMAD2 or SMAD3 in control fibroblasts and TAFs, followed by microfluidic 3D collagen migration assay showing high SMAD3 conditions drove Erk1/2 hyperactivation and increased protrusion/migration, which was abrogated by the MEK inhibitor Trametinib.",
+    "validation_methods": [
+      "shRNA knockdown",
+      "microfluidic 3D migration assay",
+      "Erk1/2 hyperactivation detection",
+      "MEK inhibitor treatment"
+    ],
+    "disease": "lung adenocarcinoma",
+    "validated_targets": [
+      {
+        "target_name": "SMAD3",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "High SMAD3 in shSMAD2 fibroblasts and ADC-TAFs led to enhanced migration and directional protrusions in 3D collagen, which was abrogated by MEK inhibitor Trametinib, indicating a pro-migratory role.",
+        "model_type": "clinical sample",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "SMAD2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "High SMAD2 in shSMAD3 fibroblasts resulted in impaired migration and poor response to TGF-β1 and Trametinib, indicating a tumor-suppressive role in TAF migration.",
+        "model_type": "clinical sample",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "MAPK/ERK pathway",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Erk1/2 hyperactivation in high SMAD3 fibroblasts; MEK inhibitor Trametinib abrogated enhanced migration, confirming the pathway's pro-migratory role.",
+        "model_type": "clinical sample",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "36572730",
+    "title": "3D collagen migration patterns reveal a SMAD3-dependent and TGF-β1-independent mechanism of recruitment for tumour-associated fibroblasts in lung adenocarcinoma.",
+    "year": "2023",
+    "journal": "British journal of cancer",
+    "doi": "10.1038/s41416-022-02093-x"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Murine LSCC models with Trp53 and Keap1 deletion in airway basal stem cells exhibited tumor formation; Keap1 loss promoted metastasis and radiation resistance; KEAP1/NRF2 mutations predicted local recurrence in NSCLC patients.",
+    "validation_methods": [
+      "mouse model",
+      "genetic deletion",
+      "stem cell self-renewal assay",
+      "tumor formation assay",
+      "metastasis assay",
+      "radiotherapy resistance assay",
+      "circulating tumor DNA analysis"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "KEAP1",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Deletion of Keap1 in murine airway basal stem cells promoted tumor aggressiveness, metastasis, and resistance to oxidative stress and radiotherapy.",
+        "model_type": "mixed",
+        "specific_model_name": "mouse airway basal stem cell-specific Trp53/Keap1 knockout, NSCLC patient circulating tumor DNA"
+      },
+      {
+        "target_name": "TP53",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Homozygous inactivation of Trp53 promoted airway basal stem cell self-renewal; deletion in ABSCs produced tumors recapitulating human LSCC.",
+        "model_type": "animal model",
+        "specific_model_name": "murine ABSC Trp53 knockout"
+      },
+      {
+        "target_name": "KEAP1/NRF2",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Risk",
+        "experimental_detail": "KEAP1/NRF2 mutation status predicted risk of local recurrence after radiotherapy in NSCLC patients, and mutations were noninvasively identified in circulating tumor DNA.",
+        "model_type": "clinical sample",
+        "specific_model_name": "NSCLC patient tumor DNA and circulating tumor DNA"
+      }
+    ],
+    "pmid": "27663899",
+    "title": "Role of KEAP1/NRF2 and TP53 Mutations in Lung Squamous Cell Carcinoma Development and Radiation Resistance.",
+    "year": "2017",
+    "journal": "Cancer discovery",
+    "doi": "10.1158/2159-8290.CD-16-0127"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "In vivo PDX screening and expansion studies confirmed that combined PI3K and CDK4/6 inhibition achieved targeted pathway inhibition and enhanced antitumor efficacy in PIK3CA-mutant LUSC.",
+    "validation_methods": [
+      "in vivo PDX screening",
+      "in vivo expansion to 5-8 mice per arm",
+      "pharmacodynamics studies"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "PI3K pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "PI3K inhibitor monotherapy achieved <20% tumor growth in PIK3CA-mutant LUSC PDX; combination with CDK4/6 inhibitor enhanced antitumor effects.",
+        "model_type": "animal model",
+        "specific_model_name": "LUSC patient-derived xenografts (PDX)"
+      },
+      {
+        "target_name": "CDK4/6-Rb pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Combined inhibition of PI3K and CDK4/6 in PIK3CA-mutant PDX models resulted in greater antitumor effects and targeted inhibition of cell-cycle pathway compared to monotherapy.",
+        "model_type": "animal model",
+        "specific_model_name": "LUSC patient-derived xenografts (PDX)"
+      }
+    ],
+    "pmid": "30093452",
+    "title": "Targeting the CDK4/6-Rb Pathway Enhances Response to PI3K Inhibition in <i>PIK3CA</i>-Mutant Lung Squamous Cell Carcinoma.",
+    "year": "2018",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-18-0717"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung, ovarian, breast, prostate, colorectal cancer",
+    "validated_targets": [],
+    "pmid": "27197191",
+    "title": "Cross-Cancer Genome-Wide Analysis of Lung, Ovary, Breast, Prostate, and Colorectal Cancer Reveals Novel Pleiotropic Associations.",
+    "year": "2016",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-15-2980"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "GLI1 inhibition in lung SCC cell lines suppressed clonogenicity and proliferation in vitro and in vivo; combined PI3K and GLI1 antagonism attenuated in vivo tumor growth of PIK3CA-amplified SCC.",
+    "validation_methods": [
+      "qPCR",
+      "colony formation assay",
+      "proliferation assay",
+      "in vivo xenograft tumor growth assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "GLI1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inhibition of GLI1 suppressed tumor cell clonogenicity and proliferation in lung SCC cell lines in culture and in vivo.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "PI3K/mTOR pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "In vivo growth of SCC with PIK3CA amplifications was attenuated by co-targeting GLI1 and PI3K.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "28652248",
+    "title": "GLI1 Blockade Potentiates the Antitumor Activity of PI3K Antagonists in Lung Squamous Cell Carcinoma.",
+    "year": "2017",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-16-3315"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "hsa-miR-31 overexpression in a human lung cancer cell line repressed DICER1 tumor suppressor activity, confirming DICER1 as a direct target.",
+    "validation_methods": [
+      "microRNA expression profiling",
+      "cell line miRNA overexpression"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "DICER1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Expression of hsa-miR-31 in a human lung cancer cell line repressed DICER1 activity but not PPP2R2A or LATS2.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "21890451",
+    "title": "A 5-microRNA signature for lung squamous cell carcinoma diagnosis and hsa-miR-31 for prognosis.",
+    "year": "2011",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-11-0419"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "In vivo metabolic profiling and molecular analysis in lung squamous cell carcinoma showed GSK3α/β signaling upregulates glutaminolysis upon mTOR inhibition; phospho-GSK3α/β protein levels predicted therapy response, and CB-839 glutaminase inhibitor combination overcame resistance.",
+    "validation_methods": [
+      "in vivo metabolic profiling",
+      "protein level measurement",
+      "drug treatment"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "GSK3α/β signaling pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Biomarker",
+        "experimental_detail": "Phospho-GSK3α/β protein levels were predictive of response to mTOR inhibition, and the pathway upregulated glutaminolysis upon chronic mTOR inhibition and glycolysis suppression.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "GLS",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Combinatorial treatment with the glutaminase inhibitor CB-839 effectively overcame therapy resistance in lung SCC.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "29763624",
+    "title": "The GSK3 Signaling Axis Regulates Adaptive Glutamine Metabolism in Lung Squamous Cell Carcinoma.",
+    "year": "2018",
+    "journal": "Cancer cell",
+    "doi": "10.1016/j.ccell.2018.04.002"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "ABTL0812 treatment in lung squamous carcinoma cell lines upregulated TRIB3, inhibited Akt/mTOR, activated AMPK and autophagy; combination with chemotherapy induced TRIB3-mediated nonapoptotic cell death.",
+    "validation_methods": [
+      "western blot",
+      "autophagy assay",
+      "ROS measurement",
+      "cell viability assay"
+    ],
+    "disease": "Nonsmall cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "TRIB3",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "ABTL0812 induced TRIB3 overexpression, leading to Akt/mTOR inhibition and autophagy-mediated nonapoptotic cell death in lung squamous carcinoma cell lines.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "Akt/mTOR",
+        "target_type": "pathway",
+        "expression_change": "Downregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "ABTL0812 inhibited Akt/mTOR axis in lung squamous carcinoma cell lines.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "AMPK",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "ABTL0812 induced AMPK activation and ROS accumulation in lung squamous carcinoma cell lines.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "31943158",
+    "title": "The novel proautophagy anticancer drug ABTL0812 potentiates chemotherapy in adenocarcinoma and squamous nonsmall cell lung cancer.",
+    "year": "2020",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.32865"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "head and neck squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "25056374",
+    "title": "Integrative and comparative genomic analysis of HPV-positive and HPV-negative head and neck squamous cell carcinomas.",
+    "year": "2015",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-13-3310"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Biallelic inactivation of Lkb1 and Pten in mouse lung leads to squamous cell carcinoma, with tumor-propagating cells exhibiting elevated PD-L1 expression.",
+    "validation_methods": [
+      "genetic knockout",
+      "histology",
+      "transcriptomic profiling",
+      "orthotopic transplantation",
+      "flow cytometry",
+      "serial transplantation"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "STK11",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Biallelic inactivation of Lkb1 in mouse lung combined with Pten loss leads to lung squamous cell carcinoma.",
+        "model_type": "animal model",
+        "specific_model_name": "mouse lung (Lkb1;Pten null)"
+      },
+      {
+        "target_name": "PTEN",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Biallelic inactivation of Pten in mouse lung combined with Lkb1 loss leads to lung squamous cell carcinoma.",
+        "model_type": "animal model",
+        "specific_model_name": "mouse lung (Lkb1;Pten null)"
+      }
+    ],
+    "pmid": "24794706",
+    "title": "Loss of Lkb1 and Pten leads to lung squamous cell carcinoma with elevated PD-L1 expression.",
+    "year": "2014",
+    "journal": "Cancer cell",
+    "doi": "10.1016/j.ccr.2014.03.033"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "21792890",
+    "title": "Expression of C4.4A in precursor lesions of pulmonary adenocarcinoma and squamous cell carcinoma.",
+    "year": "2012",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.26305"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "TNIK genetic depletion or pharmacologic inhibition reduced LSCC cell growth in vitro and in vivo, and TNIK inhibition showed antitumor activity with increased apoptosis in patient-derived xenografts.",
+    "validation_methods": [
+      "genetic depletion",
+      "pharmacologic inhibition",
+      "cell growth assay",
+      "xenograft model",
+      "apoptosis assay",
+      "patient-derived xenograft"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "TNIK",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "TNIK genetic depletion or pharmacologic inhibition reduced LSCC cell growth in vitro and in vivo, and TNIK inhibition showed antitumor activity and increased apoptosis in patient-derived xenografts; Merlin/NF2 was identified as a TNIK substrate.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "33495197",
+    "title": "TNIK Is a Therapeutic Target in Lung Squamous Cell Carcinoma and Regulates FAK Activation through Merlin.",
+    "year": "2021",
+    "journal": "Cancer discovery",
+    "doi": "10.1158/2159-8290.CD-20-0797"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "FGF19 overexpression promoted while FGF19/FGFR4 downregulation inhibited LSQ cell growth, migration, and tumor progression in vitro and in vivo; mTOR inhibitor AZD2014 showed efficacy against FGF19-overproducing LSQ.",
+    "validation_methods": [
+      "gene knockdown",
+      "ectopic expression",
+      "cell proliferation assay",
+      "cell migration assay",
+      "xenograft mouse model",
+      "drug treatment"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "FGF19",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Overproduction of FGF19 markedly promoted LSQ cell growth, progression and metastasis; downregulation of FGF19 effectively inhibited LSQ progression in vitro and in vivo.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "FGFR4",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Downregulating FGFR4 effectively suppressed the growth and migration of LSQ cells.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "mTOR",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inhibiting mTOR pathway using AZD2014 effectively suppressed the progression of FGF19-overproducing LSQ.",
+        "model_type": "unknown",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "32111983",
+    "title": "Enhanced autocrine FGF19/FGFR4 signaling drives the progression of lung squamous cell carcinoma, which responds to mTOR inhibitor AZD2104.",
+    "year": "2020",
+    "journal": "Oncogene",
+    "doi": "10.1038/s41388-020-1227-2"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "CPS1 knockdown in LADC cell lines reduced cell growth, decreased nucleic acid biosynthesis metabolites, and produced additive effects with gemcitabine, pemetrexed, or CHK1 inhibitor AZD7762.",
+    "validation_methods": [
+      "knockdown assay",
+      "cell growth assay",
+      "metabolomics",
+      "immunohistochemistry",
+      "drug combination assay"
+    ],
+    "disease": "lung adenocarcinoma",
+    "validated_targets": [
+      {
+        "target_name": "CPS1",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "CPS1 knockdown in LADC cell lines reduced cell growth, decreased metabolites in nucleic acid biosynthesis, and showed additive effect with gemcitabine, pemetrexed, or CHK1 inhibitor.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "28376202",
+    "title": "Role of CPS1 in Cell Growth, Metabolism and Prognosis in LKB1-Inactivated Lung Adenocarcinoma.",
+    "year": "2017",
+    "journal": "Journal of the National Cancer Institute",
+    "doi": "10.1093/jnci/djw231"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Lentiviral shRNA-mediated PKCι knockdown in OSC cells reduced nuclear YAP1 and inhibited transformed growth; pharmacological PKCι inhibition decreased YAP1 nuclear localization and blocked tumor growth in vitro and in vivo; IHC showed positive correlation between PKCι and nuclear YAP1 in patient samples.",
+    "validation_methods": [
+      "shRNA knockdown",
+      "co-immunoprecipitation",
+      "in vitro kinase assay",
+      "pharmacological inhibition",
+      "cell proliferation assay",
+      "in vivo xenograft",
+      "immunohistochemistry"
+    ],
+    "disease": "ovarian cancer",
+    "validated_targets": [
+      {
+        "target_name": "PRKCI",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "shRNA knockdown of PKCι decreased nuclear YAP1, increased YAP1-AMOT binding, and inhibited transformed growth; pharmacological inhibition blocked tumor growth in vitro and in vivo; PKCι expression positively correlated with nuclear YAP1 in primary tumors.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "27321186",
+    "title": "PKCι regulates nuclear YAP1 localization and ovarian cancer tumorigenesis.",
+    "year": "2017",
+    "journal": "Oncogene",
+    "doi": "10.1038/onc.2016.224"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "38788285",
+    "title": "Regional differences in predictive biomarker testing rates for patients with metastatic NSCLC in the Netherlands.",
+    "year": "2024",
+    "journal": "European journal of cancer (Oxford, England : 1990)",
+    "doi": "10.1016/j.ejca.2024.114125"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "BCL11A knockdown abolished xenograft tumor formation; shRNA-mediated or pharmacological inhibition of SETD8 selectively inhibited LUSC growth; BCL11A is required for SOX2 oncogenic functions.",
+    "validation_methods": [
+      "shRNA knockdown",
+      "pharmacological inhibition",
+      "xenograft tumour formation",
+      "in vitro squamous-like phenotype assays"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "BCL11A",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Non-physiological levels promote squamous-like phenotypes in vitro and in vivo; knockdown abolishes xenograft tumor formation.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "SOX2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "BCL11A is transcriptionally regulated by SOX2 and is required for its oncogenic functions.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "SETD8",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "shRNA-mediated or pharmacological inhibition of SETD8 selectively inhibits LUSC growth.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "30127402",
+    "title": "BCL11A interacts with SOX2 to control the expression of epigenetic regulators in lung squamous carcinoma.",
+    "year": "2018",
+    "journal": "Nature communications",
+    "doi": "10.1038/s41467-018-05790-5"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "24850843",
+    "title": "FGFR1/3 tyrosine kinase fusions define a unique molecular subtype of non-small cell lung cancer.",
+    "year": "2014",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-14-0284"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "CRISPR-mediated deletion of tumor suppressors in SOX2 knock-in mouse lung organoids generated LSCC models; WEE1 inhibition combined with anti-PD-1 promoted anti-tumor immunity in mouse models and patient-derived cell lines.",
+    "validation_methods": [
+      "CRISPR genome editing",
+      "drug treatment",
+      "three-dimensional tumoroid culture",
+      "immune cell-mediated killing assays"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "WEE1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "WEE1 inhibition induced DNA damage that primed type I IFN and antigen presentation, promoting cytotoxic T-cell clearance and reducing tumor-infiltrating neutrophils, with effects enhanced by anti-PD-1.",
+        "model_type": "mixed",
+        "specific_model_name": "Cre-dependent SOX2 knock-in mouse lung organoids, LSCC patient-derived cell lines"
+      },
+      {
+        "target_name": "PDCD1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Risk",
+        "experimental_detail": "Anti-PD-1 therapy combined with WEE1 inhibition further enhanced beneficial immunologic features and clearance of LSCC cells.",
+        "model_type": "mixed",
+        "specific_model_name": "Cre-dependent SOX2 knock-in mouse lung organoids, LSCC patient-derived cell lines"
+      }
+    ],
+    "pmid": "32209571",
+    "title": "Generation of Genetically Engineered Mouse Lung Organoid Models for Squamous Cell Lung Cancers Allows for the Study of Combinatorial Immunotherapy.",
+    "year": "2020",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-19-1627"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": true,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "37549230",
+    "title": "Protein Exaptation by Endogenous Retroviral Elements Shapes Tumor Cell Senescence and Downstream Immune Signaling.",
+    "year": "2023",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-23-1862"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "PDX models from LSCC patients were treated with dovitinib, and gene expression profiling revealed upregulation of FGFR signaling pathway components in tumors that regressed, highlighting pathway activation as a predictive biomarker.",
+    "validation_methods": [
+      "in vivo drug treatment in PDX models",
+      "gene expression profiling",
+      "pathway analysis"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "FGFR signaling pathway",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Biomarker",
+        "experimental_detail": "FGFR ligand binding/activation and SHC-mediated cascade pathway were up-regulated in dovitinib-sensitive PDX tumors (PDX-01 and PDX-05) compared to resistant ones (PDX-02-04), and FGFR pathway transcriptional activation predicted dovitinib sensitivity.",
+        "model_type": "animal model",
+        "specific_model_name": "PDX-01, PDX-05 (sensitive) and PDX-02, PDX-03, PDX-04 (resistant) LSCC patient-derived xenografts"
+      }
+    ],
+    "pmid": "28460066",
+    "title": "Co-clinical trials demonstrate predictive biomarkers for dovitinib, an FGFR inhibitor, in lung squamous cell carcinoma.",
+    "year": "2017",
+    "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+    "doi": "10.1093/annonc/mdx098"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Cell-based signaling assays confirmed that NOTCH1/NOTCH2 mutations abrogate receptor signaling, validating tumor suppressor roles in squamous cell carcinomas.",
+    "validation_methods": [
+      "cell-based signaling assay"
+    ],
+    "disease": "cutaneous squamous cell carcinoma and lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "NOTCH1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Point substitutions in key functional domains abrogate signaling in cell-based assays, indicating loss of function.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "NOTCH2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Mutations (frameshift, nonsense, point substitutions) lead to receptor truncations and abrogation of signaling in cell-based assays.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "22006338",
+    "title": "Loss-of-function mutations in Notch receptors in cutaneous and lung squamous cell carcinoma.",
+    "year": "2011",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.1114669108"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "31241180",
+    "title": "A low DNA methylation epigenotype in lung squamous cell carcinoma and its association with idiopathic pulmonary fibrosis and poorer prognosis.",
+    "year": "2020",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.32532"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Overexpression of PRKCI, SOX2, and ECT2 in Trp53-deficient mouse lung basal stem cells induced tumor formation recapitulating LSCC features, validating their oncogenic driver roles.",
+    "validation_methods": [
+      "overexpression",
+      "in vivo transformation assay",
+      "histological analysis"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "PRKCI",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Overexpression of PRKCI with SOX2 and ECT2 in the context of Trp53 loss transformed mouse lung basal stem cells into LSCC-like tumors.",
+        "model_type": "animal model",
+        "specific_model_name": "mouse lung basal stem cells"
+      },
+      {
+        "target_name": "SOX2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Overexpression of SOX2 with PRKCI and ECT2 in the context of Trp53 loss transformed mouse lung basal stem cells into LSCC-like tumors.",
+        "model_type": "animal model",
+        "specific_model_name": "mouse lung basal stem cells"
+      },
+      {
+        "target_name": "ECT2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Overexpression of ECT2 with PRKCI and SOX2 in the context of Trp53 loss transformed mouse lung basal stem cells into LSCC-like tumors.",
+        "model_type": "animal model",
+        "specific_model_name": "mouse lung basal stem cells"
+      }
+    ],
+    "pmid": "31968252",
+    "title": "Chromosome 3q26 Gain Is an Early Event Driving Coordinated Overexpression of the PRKCI, SOX2, and ECT2 Oncogenes in Lung Squamous Cell Carcinoma.",
+    "year": "2020",
+    "journal": "Cell reports",
+    "doi": "10.1016/j.celrep.2019.12.071"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung cancer",
+    "validated_targets": [],
+    "pmid": "31276202",
+    "title": "Circulating markers of cellular immune activation in prediagnostic blood sample and lung cancer risk in the Lung Cancer Cohort Consortium (LC3).",
+    "year": "2020",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.32555"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "GLI2 knockdown by lentiviral-shRNA in LSCC cell lines significantly reduced proliferation and induced apoptosis; GLI inhibitor GANT61 demonstrated in vivo antitumor activity in xenograft models.",
+    "validation_methods": [
+      "shRNA knockdown",
+      "small-molecule inhibitor",
+      "cell proliferation assay",
+      "apoptosis assay",
+      "xenograft model"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "GLI2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "GLI2 knockdown by lentiviral-shRNA in LSCC cell lines significantly reduced proliferation and induced extensive apoptosis; GLI inhibitor GANT61 showed in vivo antitumor activity in xenograft models.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "24423612",
+    "title": "Hedgehog-GLI signaling inhibition suppresses tumor growth in squamous lung cancer.",
+    "year": "2014",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-13-2195"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "23559150",
+    "title": "Identifying the target NSCLC patient for maintenance therapy: an analysis from a placebo-controlled, phase III trial of maintenance pemetrexed (H3E-MC-JMEN).",
+    "year": "2013",
+    "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+    "doi": "10.1093/annonc/mdt123"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "28177435",
+    "title": "Mutation profiles in early-stage lung squamous cell carcinoma with clinical follow-up and correlation with markers of immune function.",
+    "year": "2017",
+    "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+    "doi": "10.1093/annonc/mdw437"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Overexpression of L1-FGGY or knockdown of FGGY promoted cell proliferation and invasion in vitro and tumorigenesis in vivo, while reverse transcriptase inhibitors nevirapine and efavirenz countered L1-FGGY abundance and inhibited tumor growth.",
+    "validation_methods": [
+      "cell proliferation assay",
+      "cell invasion assay",
+      "in vivo tumorigenesis assay",
+      "drug treatment",
+      "clinical cohort validation"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "FGGY",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Knockdown of FGGY promoted cell proliferation and invasion in vitro and facilitated tumorigenesis in vivo; L1-FGGY overexpression also promoted proliferation, implying FGGY disruption contributes to tumor progression.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "31289132",
+    "title": "LINE-1 Retrotransposition Promotes the Development and Progression of Lung Squamous Cell Carcinoma by Disrupting the Tumor-Suppressor Gene FGGY.",
+    "year": "2019",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-19-0076"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "squamous cell lung carcinoma",
+    "validated_targets": [],
+    "pmid": "39836372",
+    "title": "MAPK Pathway-Activating Alteration and Immunotherapy Efficacy in Squamous Cell Lung Carcinoma: Results from the Randomized, Prospective SQUINT Trial.",
+    "year": "2025",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-24-2077"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "35121843",
+    "title": "Higher prevalence of homologous recombination deficiency in tumors from African Americans versus European Americans.",
+    "year": "2020",
+    "journal": "Nature cancer",
+    "doi": "10.1038/s43018-019-0009-7"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [
+      "Northern blot"
+    ],
+    "disease": "Lung cancer",
+    "validated_targets": [],
+    "pmid": "12932674",
+    "title": "Gene expression profiles in human non-small and small-cell lung cancers.",
+    "year": "2003",
+    "journal": "European journal of cancer (Oxford, England : 1990)",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "squamous non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "30617129",
+    "title": "Low-pass Whole-genome Sequencing of Circulating Cell-free DNA Demonstrates Dynamic Changes in Genomic Copy Number in a Squamous Lung Cancer Clinical Cohort.",
+    "year": "2019",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-18-1593"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "29902295",
+    "title": "Association of ERBB Mutations With Clinical Outcomes of Afatinib- or Erlotinib-Treated Patients With Lung Squamous Cell Carcinoma: Secondary Analysis of the LUX-Lung 8 Randomized Clinical Trial.",
+    "year": "2018",
+    "journal": "JAMA oncology",
+    "doi": "10.1001/jamaoncol.2018.0775"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "TMPRSS11B inhibition reduced transformation and tumor growth in LSCC models, and promoted Basigin solubilization to enhance lactate export, establishing an oncogenic role.",
+    "validation_methods": [
+      "gene inhibition",
+      "cell transformation assay",
+      "tumor growth assay",
+      "lactate export assay",
+      "soluble receptor screening"
+    ],
+    "disease": "lung cancer (non-small cell lung cancer, lung squamous cell carcinoma)",
+    "validated_targets": [
+      {
+        "target_name": "TMPRSS11B",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "TMPRSS11B inhibition in LSCC cells reduced transformation and tumor growth, and promoted Basigin solubilization to enhance lactate export, establishing an oncogenic role.",
+        "model_type": "mixed",
+        "specific_model_name": "immortalized human bronchial epithelial cells (HBECs), human lung squamous cell carcinoma cell lines"
+      }
+    ],
+    "pmid": "30463017",
+    "title": "Transmembrane Protease TMPRSS11B Promotes Lung Cancer Growth by Enhancing Lactate Export and Glycolytic Metabolism.",
+    "year": "2018",
+    "journal": "Cell reports",
+    "doi": "10.1016/j.celrep.2018.10.100"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "shRNA-mediated knockdown of STXBP4 and PDGFRA in lung SCC cells suppressed tumor growth in soft-agar and xenograft assays, validating their tumor-promoting roles.",
+    "validation_methods": [
+      "shRNA knockdown",
+      "soft-agar assay",
+      "xenograft assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "STXBP4",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "shRNA-mediated STXBP4 knockdown suppressed tumor growth in soft-agar and xenograft assays.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "PDGFRA",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "shRNA-mediated PDGFRA knockdown suppressed tumor growth in soft-agar and xenograft assays.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "28087642",
+    "title": "STXBP4 Drives Tumor Growth and Is Associated with Poor Prognosis through PDGF Receptor Signaling in Lung Squamous Cell Carcinoma.",
+    "year": "2017",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-16-1815"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [
+      "quantitative reverse transcription-PCR"
+    ],
+    "disease": "head and neck squamous cell carcinoma, lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "17504990",
+    "title": "A 10-gene classifier for distinguishing head and neck squamous cell carcinoma and lung squamous cell carcinoma.",
+    "year": "2007",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small-cell lung cancer",
+    "validated_targets": [],
+    "pmid": "21300929",
+    "title": "Phase I/II study of pemetrexed with or without ABT-751 in advanced or metastatic non-small-cell lung cancer.",
+    "year": "2011",
+    "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+    "doi": "10.1200/JCO.2010.32.5944"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "12397651",
+    "title": "Genetic polymorphism in myeloperoxidase but not GSTM1 is associated with risk of lung squamous cell carcinoma in a Chinese population.",
+    "year": "2002",
+    "journal": "International journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "NRF2 knockdown in A549 cells revealed global splicing changes; NRF2 was shown to transcriptionally regulate SMN1 via ARE binding and physically interact with SMN protein; SMN overexpression in NRF2-knockout HeLa cells reversed splicing alterations, confirming the functional NRF2-SMN splicing regulatory axis.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "CRISPR/Cas9 knockout",
+      "protein overexpression",
+      "co-immunoprecipitation",
+      "promoter binding assay",
+      "alternative splicing analysis"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "NFE2L2",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "NRF2 knockdown in A549 cells altered 839 alternative splicing events in 485 genes; NRF2 transcriptionally regulated SMN1 by binding to antioxidant response elements in its promoter.",
+        "model_type": "cell line",
+        "specific_model_name": "A549 cells"
+      },
+      {
+        "target_name": "SMN1",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "SMN overexpression in NRF2-knockout HeLa cells reversed some of the altered RNA splicing caused by NRF2 loss, demonstrating that NRF2-SMN interaction regulates splicing.",
+        "model_type": "cell line",
+        "specific_model_name": "HeLa cells"
+      }
+    ],
+    "pmid": "37573407",
+    "title": "NRF2 has a splicing regulatory function involving the survival of motor neuron (SMN) in non-small cell lung cancer.",
+    "year": "2023",
+    "journal": "Oncogene",
+    "doi": "10.1038/s41388-023-02799-z"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [
+      "ELISA"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "24046070",
+    "title": "Isocitrate dehydrogenase 1 is a novel plasma biomarker for the diagnosis of non-small cell lung cancer.",
+    "year": "2013",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-13-0046"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "15709189",
+    "title": "Expression of MDA-7/IL-24 and its clinical significance in resected non-small cell lung cancer.",
+    "year": "2005",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "16007138",
+    "title": "Two subclasses of lung squamous cell carcinoma with different gene expression profiles and prognosis identified by hierarchical clustering and non-negative matrix factorization.",
+    "year": "2005",
+    "journal": "Oncogene",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Overexpression of ACTL6A increased cisplatin-DNA adduct repair and resistance; ACTL6A depletion inhibited repair and increased sensitivity in ovarian cancer cells; HDAC inhibitor reversed ACTL6A overexpression effects in cells and a xenograft mouse model.",
+    "validation_methods": [
+      "overexpression",
+      "knockdown",
+      "HDAC inhibitor treatment",
+      "DNA adduct repair assay",
+      "xenograft mouse model",
+      "cell viability/cisplatin sensitivity assay"
+    ],
+    "disease": "ovarian cancer",
+    "validated_targets": [
+      {
+        "target_name": "ACTL6A",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "ACTL6A overexpression increased cisplatin-DNA adduct repair and resistance; ACTL6A depletion inhibited repair and sensitized cisplatin-resistant ovarian cancer cells; HDAC inhibitor treatment reversed ACTL6A overexpression effects in a xenograft model.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "33408251",
+    "title": "ACTL6A promotes repair of cisplatin-induced DNA damage, a new mechanism of platinum resistance in cancer.",
+    "year": "2021",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.2015808118"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "PRMT5 and WDR77 (MEP50) knockdown in lung and breast cancer cell lines reduced metastasis/EMT marker expression, altered histone arginine methylation at target genes, and impaired TGFβ-induced EMT invasion.",
+    "validation_methods": [
+      "RNA-Seq",
+      "ChIP",
+      "gene knockdown",
+      "cell invasion assay"
+    ],
+    "disease": "lung adenocarcinoma, lung squamous cell carcinoma, breast carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "PRMT5",
+        "target_type": "protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "PRMT5 knockdown suppressed invasive phenotypes and dysregulated histone H3R2me1 and H4R3me2s methylation at metastasis/EMT genes, blocking TGFβ-induced EMT.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "WDR77",
+        "target_type": "protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "WDR77 (MEP50) is required for PRMT5 complex activity; its knockdown inhibited cancer cell invasion and altered histone arginine methylation signatures at key loci.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "27270440",
+    "title": "A TGFβ-PRMT5-MEP50 axis regulates cancer cell invasion through histone H3 and H4 arginine methylation coupled transcriptional activation and repression.",
+    "year": "2017",
+    "journal": "Oncogene",
+    "doi": "10.1038/onc.2016.205"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung cancer",
+    "validated_targets": [],
+    "pmid": "12740916",
+    "title": "Sequence variations in the DNA repair gene XPD and risk of lung cancer in a Chinese population.",
+    "year": "2003",
+    "journal": "International journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "siRNA-mediated SOX2 silencing in lung SQC cells increased BMP4 mRNA/protein, reduced cell growth, and caused cell cycle arrest; xenograft model confirmed tumor suppression; ChIP and luciferase assays showed SOX2 binds BMP4 promoter.",
+    "validation_methods": [
+      "siRNA transfection",
+      "qRT-PCR",
+      "immunohistochemistry",
+      "growth assay",
+      "flow cytometry",
+      "xenograft tumor model",
+      "chromatin immunoprecipitation",
+      "luciferase reporter assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "SOX2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "SOX2 silencing upregulated BMP4 and inhibited growth; ChIP and luciferase assays confirmed SOX2 negatively regulates BMP4 promoter.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "BMP4",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "BMP4 reactivation partially caused growth inhibition and cell cycle arrest upon SOX2 silencing; its expression inversely correlated with SOX2.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "24477565",
+    "title": "Downregulation of a putative tumor suppressor BMP4 by SOX2 promotes growth of lung squamous cell carcinoma.",
+    "year": "2014",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.28734"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [
+      "quantitative real-time reverse transcription-PCR",
+      "Western blot"
+    ],
+    "disease": "squamous cell carcinoma of the lung",
+    "validated_targets": [],
+    "pmid": "15355908",
+    "title": "Casein kinase II alpha subunit and C1-inhibitor are independent predictors of outcome in patients with squamous cell carcinoma of the lung.",
+    "year": "2004",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "41808476",
+    "title": "Methylation signatures distinguish non-small cell lung cancer subtypes and are associated with survival in smokers with lung squamous cell carcinoma.",
+    "year": "2026",
+    "journal": "Journal of the National Cancer Institute",
+    "doi": "10.1093/jnci/djag067"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Drug combination experiments in EGFR-mutant lung squamous cell carcinoma cells showed that inhibition of BMPR or mTOR, or PI3K/mTOR dual inhibitor BEZ235, overcame EGFR-TKI resistance.",
+    "validation_methods": [
+      "Drug combination treatment",
+      "Cell viability assay"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "BMP-BMPR pathway",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Activation of BMP-BMPR-Smad1/5-p70S6K conferred resistance to EGFR-TKI; combined EGFR-TKI with BMPR inhibitor reversed resistance.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "MTOR",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Combined EGFR-TKI with mTOR inhibitor effectively reversed EGFR-TKI resistance in lung squamous cell carcinoma cells.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "PI3K-AKT-mTOR pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "PI3K/mTOR dual inhibitor BEZ235 showed efficacy in treating EGFR-mutant lung squamous cell carcinoma.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "26216950",
+    "title": "Activation of the BMP-BMPR pathway conferred resistance to EGFR-TKIs in lung squamous cell carcinoma patients with EGFR mutations.",
+    "year": "2015",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.1510837112"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "pulmonary squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "22228640",
+    "title": "Clarifying the spectrum of driver oncogene mutations in biomarker-verified squamous carcinoma of lung: lack of EGFR/KRAS and presence of PIK3CA/AKT1 mutations.",
+    "year": "2012",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-11-2109"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer, colorectal cancer",
+    "validated_targets": [],
+    "pmid": "23876834",
+    "title": "Feasibility of preemptive biomarker profiling for personalised early clinical drug development at a Comprehensive Cancer Center.",
+    "year": "2013",
+    "journal": "European journal of cancer (Oxford, England : 1990)",
+    "doi": "10.1016/j.ejca.2013.06.014"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Gefitinib treatment of hypercalcaemic nude mice bearing RWGT2 or HARA xenografts reduced plasma calcium, and in vitro EGFR inhibitor PD153035 or AREG neutralizing antibody reduced PTHrP gene expression, validating EGFR and AREG as mediators of hypercalcaemia.",
+    "validation_methods": [
+      "xenograft animal model",
+      "drug treatment in vivo",
+      "in vitro drug/antibody treatment",
+      "mRNA expression analysis",
+      "plasma biochemistry"
+    ],
+    "disease": "lung squamous-cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "EGFR",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Gefitinib treatment in hypercalcaemic mice with RWGT2 and HARA xenografts significantly reduced plasma total calcium by 78 h; in vitro, EGFR inhibitor PD153035 reduced PTHrP gene expression by 40-80%.",
+        "model_type": "animal model and cell line",
+        "specific_model_name": "RWGT2 and HARA cell lines, athymic nude mice"
+      },
+      {
+        "target_name": "AREG",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Precipitating antibodies to AREG reduced PTHrP gene expression by 40-80% in RWGT2 and HARA cells.",
+        "model_type": "cell line",
+        "specific_model_name": "RWGT2 and HARA lung squamous-cell carcinoma lines"
+      }
+    ],
+    "pmid": "17533397",
+    "title": "Inhibition of epidermal growth factor receptor signalling reduces hypercalcaemia induced by human lung squamous-cell carcinoma in athymic mice.",
+    "year": "2007",
+    "journal": "British journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung cancer",
+    "validated_targets": [],
+    "pmid": "18172250",
+    "title": "Loss and reduction of FUS1 protein expression is a frequent phenomenon in the pathogenesis of lung cancer.",
+    "year": "2008",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-07-1252"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "FOXO3 homozygous deletion detected in early-stage lung adenocarcinoma tumors; BPDE carcinogen exposure in cells showed FOXO3a activation and caspase-dependent apoptosis augmentation, validating tumor suppressor function.",
+    "validation_methods": [
+      "genomic deletion analysis",
+      "mRNA quantification",
+      "protein level measurement",
+      "carcinogen exposure assay",
+      "apoptosis assay"
+    ],
+    "disease": "lung adenocarcinoma",
+    "validated_targets": [
+      {
+        "target_name": "FOXO3",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "FOXO3 gene homozygous deletion detected in 24.2% of early-stage lung adenocarcinoma tumors; BPDE carcinogen exposure induced FOXO3a activation and enhanced caspase-dependent apoptosis in cells.",
+        "model_type": "mixed",
+        "specific_model_name": "patient lung adenocarcinoma tissues; unspecified cell line"
+      }
+    ],
+    "pmid": "20631076",
+    "title": "FOXO3 encodes a carcinogen-activated transcription factor frequently deleted in early-stage lung adenocarcinoma.",
+    "year": "2010",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-09-4008"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "pulmonary squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "75859",
+    "title": "Detection of circulating tumor antigens in mice carrying a highly metastatic pulmonary squamous--cell carcinoma.",
+    "year": "1978",
+    "journal": "International journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Live-cell imaging and orthogonal in vitro assays demonstrated that combined inhibition of TRIP13 and Aurora A induces mitotic DNA damage, apoptosis, and GSDME-mediated pyroptosis in Rb-deficient cancer cells; mouse xenografts with Aurora A inhibitor and inducible TRIP13 degradation confirmed antitumor efficacy.",
+    "validation_methods": [
+      "live-cell imaging",
+      "in vitro apoptosis assay",
+      "in vitro pyroptosis assay",
+      "cell cycle analysis",
+      "mouse xenograft model",
+      "tumor mRNA expression analysis"
+    ],
+    "disease": "Rb-deficient cancers, including head and neck and lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "TRIP13",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Inducible degradation of TRIP13 combined with Aurora A inhibitor prolonged mitotic arrest and enhanced cytotoxicity in Rb-deficient cancer cells in vitro and in mouse xenografts.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "AURKA",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Pharmacological inhibition of Aurora A together with TRIP13 degradation induced mitotic DNA damage, concurrent apoptotic and GSDME-mediated pyroptotic cell death in Rb-deficient cancer cells, and marked antitumor efficacy in mouse xenografts.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "42013305",
+    "title": "Dual Inhibition of TRIP13 and Aurora A Induces Mitotic DNA Damage and Concurrent Pyroptotic-Apoptotic Cell Death in Rb-Deficient Cancer Cells.",
+    "year": "2026",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-25-4712"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "siRNA-mediated knockdown of AKR1B10 in HCT-8 colorectal cancer cells reduced cell growth, DNA synthesis, focus formation, and colony size, and enhanced cell death upon carbonyl stress, confirming its pro-proliferative role.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "cell growth assay",
+      "DNA synthesis assay",
+      "focus formation assay",
+      "colony formation assay",
+      "LDH efflux assay",
+      "annexin-V staining",
+      "enzymatic activity assay"
+    ],
+    "disease": "colorectal cancer",
+    "validated_targets": [
+      {
+        "target_name": "AKR1B10",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA silencing of AKR1B10 in HCT-8 cells decreased cell growth rate, DNA synthesis, focus formation and colony size, and increased sensitivity to acrolein and crotonaldehyde.",
+        "model_type": "cell line",
+        "specific_model_name": "HCT-8"
+      }
+    ],
+    "pmid": "17597105",
+    "title": "Aldo-keto reductase family 1 B10 gene silencing results in growth inhibition of colorectal cancer cells: Implication for cancer intervention.",
+    "year": "2007",
+    "journal": "International journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Knockdown of LOXL2 or SNAI1 in HaCa4 cells reduced in vivo invasion; LOXL2 silencing specifically induced an epidermal differentiation program, and high expression of both correlated with poor prognosis in mouse and human squamous cell carcinomas.",
+    "validation_methods": [
+      "gene knockdown",
+      "in vivo invasion assay",
+      "gene expression profiling",
+      "mouse carcinogenesis model",
+      "immunohistochemistry",
+      "survival analysis"
+    ],
+    "disease": "squamous cell carcinomas",
+    "validated_targets": [
+      {
+        "target_name": "LOXL2",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "LOXL2 knockdown in HaCa4 cells reduced in vivo invasion and triggered an epidermal differentiation program; high LOXL2 correlated with decreased survival in laryngeal, lung, and N0 breast squamous cell carcinomas.",
+        "model_type": "mixed",
+        "specific_model_name": "HaCa4 cells, two-stage mouse skin carcinogenesis model, 256 human laryngeal squamous cell carcinomas"
+      },
+      {
+        "target_name": "SNAI1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "SNAI1 knockdown reduced in vivo invasion; high SNAI1 expression correlated with malignant progression in mouse skin model and with local recurrence in laryngeal squamous cell carcinomas.",
+        "model_type": "mixed",
+        "specific_model_name": "HaCa4 cells, two-stage mouse skin carcinogenesis model, 256 human laryngeal squamous cell carcinomas"
+      }
+    ],
+    "pmid": "18559498",
+    "title": "Lysyl oxidase-like 2 as a new poor prognosis marker of squamous cell carcinomas.",
+    "year": "2008",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-07-6345"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "A549 cells treated with demethylating agent 5-aza-2'-deoxycytidine and HDAC inhibitor trichostatin A showed upregulated expression of miR-9-3 and miR-193a by microarray, and tumor-specific methylation of these miRNAs was validated in NSCLC cell lines and primary tumors.",
+    "validation_methods": [
+      "Drug treatment",
+      "Microarray expression analysis",
+      "Methylation analysis"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "MIR9-3",
+        "target_type": "miRNA",
+        "expression_change": "Downregulated",
+        "functional_role": "Biomarker",
+        "experimental_detail": "MIR9-3 methylation was tumor-specific in NSCLC patients; methylation associated with shorter disease-free survival in lung squamous cell carcinoma (multivariate HR=3.8, P=0.017) and shorter overall survival (univariate P=0.013).",
+        "model_type": "mixed",
+        "specific_model_name": "A549 cells, 11 NSCLC cell lines, 101 patient primary tumors and nonmalignant lung tissues"
+      },
+      {
+        "target_name": "MIR193A",
+        "target_type": "miRNA",
+        "expression_change": "Downregulated",
+        "functional_role": "Null",
+        "experimental_detail": "MIR193A was found to be tumor-specifically methylated in primary NSCLC tumors compared to adjacent nonmalignant lung tissue.",
+        "model_type": "mixed",
+        "specific_model_name": "A549 cells, 11 NSCLC cell lines, 101 patient primary tumors and nonmalignant lung tissues"
+      }
+    ],
+    "pmid": "22282464",
+    "title": "Genome-wide miRNA expression profiling identifies miR-9-3 and miR-193a as targets for DNA methylation in non-small cell lung cancers.",
+    "year": "2012",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-11-2450"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "A GEMM with FGFR2 kinase domain mutation and p53 ablation induced high-grade lung adenocarcinoma; tumors were acutely sensitive to a pan-FGFR inhibitor.",
+    "validation_methods": [
+      "genetically engineered mouse model",
+      "drug treatment",
+      "histological analysis"
+    ],
+    "disease": "Non-small cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "FGFR2",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Kinase domain mutation in FGFR2 combined with p53 ablation induced high-grade lung adenocarcinoma in mouse model; tumors were sensitive to pan-FGFR inhibitor.",
+        "model_type": "animal model",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "25035393",
+    "title": "Kinase domain activation of FGFR2 yields high-grade lung adenocarcinoma sensitive to a Pan-FGFR inhibitor in a mouse model of NSCLC.",
+    "year": "2014",
+    "journal": "Cancer research",
+    "doi": "10.1158/0008-5472.CAN-13-3218"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "squamous-cell carcinoma of lung",
+    "validated_targets": [],
+    "pmid": "1917142",
+    "title": "Establishment of a new human cancer cell line secreting protease nexin-II/amyloid beta protein precursor derived from squamous-cell carcinoma of lung.",
+    "year": "1991",
+    "journal": "International journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small-cell lung cancer",
+    "validated_targets": [],
+    "pmid": "20702788",
+    "title": "First-line erlotinib and bevacizumab in patients with locally advanced and/or metastatic non-small-cell lung cancer: a phase II study including molecular imaging.",
+    "year": "2011",
+    "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+    "doi": "10.1093/annonc/mdq391"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Cancer (skin, lung, urothelial)",
+    "validated_targets": [],
+    "pmid": "26566708",
+    "title": "Effect of heme oxygenase-1 gene promoter polymorphism on cancer risk by histological subtype: A prospective study in arseniasis-endemic areas in Taiwan.",
+    "year": "2016",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.29926"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Overexpression of FXR1 is critical for NSCLC cell growth in vitro and in vivo; FXR1 forms a complex with PRKCI and ECT2; high FXR1 expression predicts poor survival in multiple solid tumors.",
+    "validation_methods": [
+      "cell proliferation assay",
+      "xenograft model",
+      "co-immunoprecipitation"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "FXR1",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Overexpression is critical for NSCLC cell growth in vitro and in vivo; forms a novel complex with PRKCI and ECT2 oncogenes.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "25733852",
+    "title": "The RNA binding protein FXR1 is a new driver in the 3q26-29 amplicon and predicts poor prognosis in human cancers.",
+    "year": "2015",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.1421975112"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung cancer",
+    "validated_targets": [],
+    "pmid": "15849750",
+    "title": "Aberrant promoter methylation of p16(INK4a), RARB2 and SEMA3B in bronchial aspirates from patients with suspected lung cancer.",
+    "year": "2005",
+    "journal": "International journal of cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "AZD4547 selectively inhibited growth of FGFR1-amplified NSCLC cell lines and induced tumor stasis/regression in FGFR1-amplified patient-derived xenograft models, validating FGFR1 as an oncogenic driver.",
+    "validation_methods": [
+      "cell viability assay",
+      "FISH",
+      "patient-derived xenograft antitumor efficacy",
+      "pharmacodynamic analysis"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "FGFR1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "AZD4547 selectively inhibited growth of FGFR1-amplified NSCLC cell lines (GI50 0.003-0.111 μM) and caused tumor stasis/regression in FGFR1-amplified patient-derived xenograft models, with efficacy correlating with FGFR1 amplification and protein levels.",
+        "model_type": "mixed",
+        "specific_model_name": "lung cell line panel (unspecified) and patient-derived xenograft models of FGFR1-amplified squamous NSCLC"
+      }
+    ],
+    "pmid": "23082000",
+    "title": "Translating the therapeutic potential of AZD4547 in FGFR1-amplified non-small cell lung cancer through the use of patient-derived tumor xenograft models.",
+    "year": "2012",
+    "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+    "doi": "10.1158/1078-0432.CCR-12-2694"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung adenocarcinoma",
+    "validated_targets": [],
+    "pmid": "19296538",
+    "title": "FGFR4 Gly388Arg polymorphism may affect the clinical stage of patients with lung cancer by modulating the transcriptional profile of normal lung.",
+    "year": "2009",
+    "journal": "International journal of cancer",
+    "doi": "10.1002/ijc.24302"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "ΔNp63α overexpression and deficiency experiments in cell models demonstrated protection from oxidative stress/ferroptosis and promotion of clonogenic survival; co-expression with BCL-2 conferred resistance to matrix detachment, disrupted mammary acinar clearance, and promoted metastasis.",
+    "validation_methods": [
+      "Gene overexpression",
+      "Gene deficiency/knockdown",
+      "Cell viability assay",
+      "Clonogenic survival assay",
+      "Metastasis assay",
+      "Mammary acinar morphogenesis assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "TP63",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "ΔNp63α overexpression protected cells from oxidative stress and ferroptosis, promoted clonogenic survival in p53-/- Bax-/- Bak-/- cells, and cooperated with BCL-2 to enhance survival against matrix detachment and metastasis.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "BCL-2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Co-expression of BCL-2 with ΔNp63α conferred clonogenic survival against matrix detachment, disrupted luminal clearance of mammary acini, and promoted cancer metastasis.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "29212036",
+    "title": "ΔNp63 Inhibits Oxidative Stress-Induced Cell Death, Including Ferroptosis, and Cooperates with the BCL-2 Family to Promote Clonogenic Survival.",
+    "year": "2017",
+    "journal": "Cell reports",
+    "doi": "10.1016/j.celrep.2017.11.030"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Knockdown of VEGF-B in human melanomas impaired pulmonary metastasis and increased perivascular coverage; overexpression promoted leaky vasculature and enhanced metastasis, effects maintained in VEGF-A-null tumors and Vegfr1 tk-/- mice, demonstrating a VEGF-A-independent metastasis-promoting role.",
+    "validation_methods": [
+      "shRNA knockdown",
+      "Overexpression",
+      "Mouse xenograft",
+      "Metastasis assay",
+      "Immunohistochemistry"
+    ],
+    "disease": "Melanoma",
+    "validated_targets": [
+      {
+        "target_name": "VEGFB",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Knockdown of VEGFB in human melanomas reduced pulmonary metastasis and increased perivascular cell coverage; overexpression led to pseudonormalized leaky vasculature and enhanced metastasis, even in VEGF-A-null tumors and Vegfr1 tk-/- mice, demonstrating VEGF-A-independent promotion of metastasis.",
+        "model_type": "mixed",
+        "specific_model_name": "human melanoma cell lines, Vegfr1 tk-/- mice"
+      }
+    ],
+    "pmid": "25991856",
+    "title": "VEGF-B promotes cancer metastasis through a VEGF-A-independent mechanism and serves as a marker of poor prognosis for cancer patients.",
+    "year": "2015",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.1503500112"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "Anti-PTHrP antibody injection via tail vein reduced bone metastasis incidence, tumor colony number, and tumor volume in a nude mouse model following intracardiac inoculation of HARA human lung squamous carcinoma cells, demonstrating PTHrP's functional role in bone metastasis.",
+    "validation_methods": [
+      "xenograft mouse model",
+      "antibody therapy",
+      "tumor burden assay"
+    ],
+    "disease": "bone metastasis from lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "PTHLH",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Neutralizing anti-PTHrP antibody treatment reduced bone metastasis incidence, tumor colony number, and tumor volume in a nude mouse model of HARA cell bone metastasis, while QG-56 cells lacking PTHrP expression did not form bone metastases.",
+        "model_type": "animal model",
+        "specific_model_name": "nude mice"
+      }
+    ],
+    "pmid": "8752176",
+    "title": "An experimental model of bone metastasis by human lung cancer cells: the role of parathyroid hormone-related protein in bone metastasis.",
+    "year": "1996",
+    "journal": "Cancer research",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "evidence_summary": "VEGF mRNA and protein expression correlated with brain metastasis; transfection of PC14PE6 and KM12SM cells with antisense-VEGF165 decreased brain metastasis incidence in nude mice, confirming VEGF's necessary role.",
+    "validation_methods": [
+      "antisense gene transfection",
+      "sense gene transfection",
+      "mRNA expression analysis",
+      "protein expression analysis",
+      "animal model (intracarotid injection)"
+    ],
+    "disease": "brain metastasis",
+    "validated_targets": [
+      {
+        "target_name": "VEGFA",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Transfection of PC14PE6 and KM12SM cells with antisense-VEGF165 gene significantly decreased the incidence of brain metastasis; sense-VEGF transfection in H226 cells did not affect metastasis.",
+        "model_type": "mixed",
+        "specific_model_name": "PC14PE6, KM12SM, H226 cell lines; nude mice intracarotid injection"
+      }
+    ],
+    "pmid": "10987313",
+    "title": "Expression of vascular endothelial growth factor is necessary but not sufficient for production and growth of brain metastasis.",
+    "year": "2000",
+    "journal": "Cancer research",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "40473106",
+    "title": "Quantitative and Dynamic ctDNA as a Biomarker of Response and Survival in Patients With Advanced Lung Squamous Cell Carcinoma Receiving Immunochemotherapy or Chemotherapy Alone.",
+    "year": "2025",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2025.05.021"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "40912657",
+    "title": "Translational Analysis of NSD3 Gene Amplification in Lung Squamous Cell Carcinoma: Clinical and Prognostic Insights From Histopathologic Analysis of Patient Samples.",
+    "year": "2026",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2025.08.022"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "advanced squamous non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "34923163",
+    "title": "Camrelizumab Plus Carboplatin and Paclitaxel as First-Line Treatment for Advanced Squamous NSCLC (CameL-Sq): A Phase 3 Trial.",
+    "year": "2022",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2021.11.018"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "LUAD",
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Non-squamous non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "40578381",
+    "title": "Adjuvant chemotherapy for stage IA-IIA non-squamous, non-small-cell lung cancer identified as molecular high-risk by a 14-gene expression profile (AIM-HIGH): an international, randomised, phase 3 trial.",
+    "year": "2025",
+    "journal": "The Lancet. Respiratory medicine",
+    "doi": "10.1016/S2213-2600(25)00213-9"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "multiple cancer types",
+    "validated_targets": [],
+    "pmid": "36961477",
+    "title": "Supporting Biomarker-Driven Therapies in Oncology: A Genomic Testing Cost Calculator.",
+    "year": "2023",
+    "journal": "The oncologist",
+    "doi": "10.1093/oncolo/oyad005"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Cell-penetrating peptide Hx1R8 targeting SOX2 HMG domain disrupted SOX2 self-association and condensate formation, reversed chemoresistance and restored drug sensitivity in LSCC cells.",
+    "validation_methods": [
+      "peptide treatment",
+      "phase separation assay",
+      "chemoresistance reversal assay"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "SOX2",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Disruption of SOX2 self-association and condensate formation by cell-penetrating peptide Hx1R8 targeting the HMG domain reverses chemoresistance in LSCC cells.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "42143069",
+    "title": "Disrupting SOX2 self-association and condensate formation to overcome chemotherapeutic drug resistance in lung squamous cell carcinoma.",
+    "year": "2026",
+    "journal": "Signal transduction and targeted therapy",
+    "doi": "10.1038/s41392-026-02696-3"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Pharmacologic mTOR inhibition with Torin2 sensitized LUSC cell lines to radiation, confirming AKT-mTOR pathway functional role in chemoradiation resistance.",
+    "validation_methods": [
+      "patient-derived xenograft models",
+      "reverse phase protein analysis (RPPA)",
+      "drug treatment (Torin2)",
+      "radiation sensitization assay"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "AKT-mTOR signaling pathway",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Pharmacologic inhibition of mTOR kinase by Torin2 significantly sensitized LUSC cell lines to ionizing radiation.",
+        "model_type": "mixed",
+        "specific_model_name": "HARA cell line, LUSC patient-derived xenograft models"
+      }
+    ],
+    "pmid": "34810212",
+    "title": "Deregulation of AKT-mTOR Signaling Contributes to Chemoradiation Resistance in Lung Squamous Cell Carcinoma.",
+    "year": "2022",
+    "journal": "Molecular cancer research : MCR",
+    "doi": "10.1158/1541-7786.MCR-21-0272"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung cancer",
+    "validated_targets": [],
+    "pmid": "39694415",
+    "title": "LIBELULE: A Randomized Phase III Study to Evaluate the Clinical Relevance of Early Liquid Biopsy in Patients With Suspicious Metastatic Lung Cancer.",
+    "year": "2025",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2024.12.011"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": true,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "35351670",
+    "title": "KEAP1-Mutant NSCLC: The Catastrophic Failure of a Cell-Protecting Hub.",
+    "year": "2022",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2022.03.011"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "31879171",
+    "title": "Transcriptome-based molecular subtyping of non-small cell lung cancer may predict response to immune checkpoint inhibitors.",
+    "year": "2020",
+    "journal": "The Journal of thoracic and cardiovascular surgery",
+    "doi": "10.1016/j.jtcvs.2019.10.123"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "16029927",
+    "title": "ERBB2 kinase domain mutation in the lung squamous cell carcinoma.",
+    "year": "2006",
+    "journal": "Cancer letters",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": true,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "31138727",
+    "title": "Amplifying Outcomes: Checkpoint Inhibitor Combinations in First-Line Non-Small Cell Lung Cancer.",
+    "year": "2020",
+    "journal": "The oncologist",
+    "doi": "10.1634/theoncologist.2019-0027"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "29720381",
+    "title": "Whole Exome and Transcriptome Analyses Integrated with Microenvironmental Immune Signatures of Lung Squamous Cell Carcinoma.",
+    "year": "2018",
+    "journal": "Cancer immunology research",
+    "doi": "10.1158/2326-6066.CIR-17-0453"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Lung squamous cell carcinoma and lung adenocarcinoma",
+    "validated_targets": [],
+    "pmid": "28341226",
+    "title": "Lung Adenocarcinoma and Squamous Cell Carcinoma Gene Expression Subtypes Demonstrate Significant Differences in Tumor Immune Landscape.",
+    "year": "2017",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2017.03.010"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "circPVT1 upregulation in LUSC promotes proliferation via the HuR/circPVT1/miR-30d/miR-30e/CCNF axis, validated by in vitro and in vivo experiments including dual-luciferase reporter, RNA immunoprecipitation, and xenograft models.",
+    "validation_methods": [
+      "qRT-PCR",
+      "RNA pull-down",
+      "mass spectrometry",
+      "dual-luciferase reporter",
+      "RNA immunoprecipitation",
+      "in vitro proliferation assay",
+      "in vivo xenograft"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "circPVT1",
+        "target_type": "lncRNA",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "circPVT1 was upregulated in LUSC tissues, serum, and cell lines; higher expression correlated with shorter survival; it promoted proliferation in vitro and in vivo by sponging miR-30d/e to alleviate suppression of CCNF.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "miR-30d",
+        "target_type": "miRNA",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "miR-30d is sponged by circPVT1, relieving its suppressive effect on CCNF; no expression change explicitly stated in the abstract.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "miR-30e",
+        "target_type": "miRNA",
+        "expression_change": "Null",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "miR-30e is sponged by circPVT1, relieving its suppressive effect on CCNF; no expression change explicitly stated in the abstract.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "ELAVL1",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "ELAVL1 (HuR) was shown to regulate circPVT1 expression; exact functional consequence not specified.",
+        "model_type": "unknown",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "CCNF",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "CCNF is a target of miR-30d/e; circPVT1 relieves miRNA-mediated suppression of CCNF, contributing to proliferation promotion.",
+        "model_type": "unchanged",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "34112238",
+    "title": "CircPVT1 promotes proliferation of lung squamous cell carcinoma by binding to miR-30d/e.",
+    "year": "2021",
+    "journal": "Journal of experimental & clinical cancer research : CR",
+    "doi": "10.1186/s13046-021-01976-w"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Silencing USP28 in SCC cells reduced mevalonate pathway enzyme expression and metabolic flux, while CRISPR deletion of SREBP2 attenuated tumor growth in a KRas/p53/LKB1 mutant mouse model, and statins synergized with a dual USP28/25 inhibitor to reduce SCC cell viability.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "CRISPR/Cas9 knockout",
+      "drug treatment",
+      "co-immunoprecipitation",
+      "deubiquitination assay",
+      "Western blot",
+      "metabolic flux analysis",
+      "cell viability assay",
+      "mouse model"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "USP28",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Silencing USP28 reduced expression of mevalonate pathway enzymes and lowered metabolic flux; USP28 depletion rendered cancer cells highly sensitive to statins, and USP28 bound to and deubiquitinated SREBP2, stabilizing it.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "SREBP2",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "CRISPR/Cas-mediated deletion of SREBP2 selectively attenuated tumour growth in a KRas/p53/LKB1 mutant mouse model of lung cancer.",
+        "model_type": "animal model",
+        "specific_model_name": "KRas/p53/LKB1 mutant mouse model of lung cancer"
+      },
+      {
+        "target_name": "Mevalonate pathway",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "USP28 depletion reduced metabolic flux into the mevalonate pathway, and statins synergized with a dual USP28/25 inhibitor to reduce viability of SCC cells.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "37202505",
+    "title": "USP28 controls SREBP2 and the mevalonate pathway to drive tumour growth in squamous cancer.",
+    "year": "2023",
+    "journal": "Cell death and differentiation",
+    "doi": "10.1038/s41418-023-01173-6"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "28223168",
+    "title": "Prognostic alternative mRNA splicing signature in non-small cell lung cancer.",
+    "year": "2017",
+    "journal": "Cancer letters",
+    "doi": "10.1016/j.canlet.2017.02.016"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "30472670",
+    "title": "5 protein-based signature for resectable lung squamous cell carcinoma improves the prognostic performance of the TNM staging.",
+    "year": "2019",
+    "journal": "Thorax",
+    "doi": "10.1136/thoraxjnl-2018-212194"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "MESO",
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "mesothelioma",
+    "validated_targets": [],
+    "pmid": "37899530",
+    "title": "SPARC Is a Novel Positive Immunohistochemical Marker of Epithelioid Mesothelioma to Differentiate It From Lung Adenocarcinoma and/or Squamous Cell Carcinoma.",
+    "year": "2024",
+    "journal": "The American journal of surgical pathology",
+    "doi": "10.1097/PAS.0000000000002147"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "RP215 antibody treatment blocked cancer-derived IgG (CIgG) in LSCC cells, reducing cell survival, migration, and xenograft tumor growth, and inhibiting integrin α6β4-FAK-Src signaling.",
+    "validation_methods": [
+      "antibody-based inhibition (RP215)",
+      "cell survival assay",
+      "cell migration assay",
+      "xenograft tumor growth assay",
+      "signaling analysis (FAK/Src phosphorylation)"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "CIgG",
+        "target_type": "protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "RP215 antibody inhibited CIgG, resulting in reduced LSCC cell survival, migration, and in vivo growth, and blocked integrin α6β4-FAK-Src pathway activation.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "29778566",
+    "title": "Lung squamous cell carcinoma cells express non-canonically glycosylated IgG that activates integrin-FAK signaling.",
+    "year": "2018",
+    "journal": "Cancer letters",
+    "doi": "10.1016/j.canlet.2018.05.024"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "non-small-cell lung cancer",
+    "validated_targets": [],
+    "pmid": "41825453",
+    "title": "Benmelstobart plus anlotinib versus pembrolizumab as first-line treatment for PD-L1-positive, advanced non-small-cell lung cancer (CAMPASS): a blinded, randomised, controlled, phase 3 trial.",
+    "year": "2026",
+    "journal": "The Lancet. Oncology",
+    "doi": "10.1016/S1470-2045(26)00049-5"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "THYM",
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "thymic epithelial tumors",
+    "validated_targets": [],
+    "pmid": "16002927",
+    "title": "Immunohistochemical KIT (CD117) expression in thymic epithelial tumors.",
+    "year": "2005",
+    "journal": "Chest",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "small-cell carcinoma of the lung",
+    "validated_targets": [],
+    "pmid": "14752524",
+    "title": "Epstein-Barr virus plays no role in the tumorigenesis of small-cell carcinoma of the lung.",
+    "year": "2004",
+    "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "15246564",
+    "title": "Identification of differentially expressed genes in human lung squamous cell carcinoma using suppression subtractive hybridization.",
+    "year": "2004",
+    "journal": "Cancer letters",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "NOTCH1 knockdown in lung adenocarcinoma and lung squamous cell carcinoma models altered growth and differentially affected angiogenesis/immune and cell cycle/mitosis pathways, validated by tissue culture and xenograft studies.",
+    "validation_methods": [
+      "RNA interference",
+      "in vitro cell culture",
+      "in vivo xenograft model",
+      "protein interaction profiling"
+    ],
+    "disease": "non-small cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "NOTCH1",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "NOTCH1 knockdown in lung adenocarcinoma and squamous cell carcinoma models showed growth differences and opposing effects on angiogenesis/immune and cell cycle/mitosis pathways, respectively.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "30408569",
+    "title": "Co-Expression Analysis Reveals Mechanisms Underlying the Varied Roles of NOTCH1 in NSCLC.",
+    "year": "2019",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2018.10.162"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Combined whole-genome DNA methylation and gene expression profiling identified six genes (CCDC37, CYTL1, CDO1, SLIT2, LMO3, SERPINB5) regulated by DNA methylation; validation by semiquantitative RT-PCR, pyrosequencing, and demethylating agent treatment confirmed methylation-dependent expression recovery.",
+    "validation_methods": [
+      "semiquantitative RT-PCR",
+      "pyrosequencing",
+      "demethylating agent treatment"
+    ],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "CCDC37",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gene is among six genes regulated by DNA methylation; validated by demethylating agent treatment which confirmed recovery of DNA methylation pattern and gene expression level.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "CYTL1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gene is among six genes regulated by DNA methylation; validated by demethylating agent treatment which confirmed recovery of DNA methylation pattern and gene expression level.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "CDO1",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gene is among six genes regulated by DNA methylation; validated by demethylating agent treatment which confirmed recovery of DNA methylation pattern and gene expression level.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "SLIT2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gene is among six genes regulated by DNA methylation; validated by demethylating agent treatment which confirmed recovery of DNA methylation pattern and gene expression level.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "LMO3",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gene is among six genes regulated by DNA methylation; validated by demethylating agent treatment which confirmed recovery of DNA methylation pattern and gene expression level.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "SERPINB5",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gene is among six genes regulated by DNA methylation; validated by demethylating agent treatment which confirmed recovery of DNA methylation pattern and gene expression level.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "22011669",
+    "title": "Genome-wide analysis of DNA methylation and the gene expression change in lung cancer.",
+    "year": "2012",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1097/JTO.0b013e3182307f62"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "KIRC",
+    "evidence_summary": "siRNA-mediated CFH silencing in ccRCC cell lines decreased proliferation, induced cell-cycle arrest and mortality, increased p53 phosphorylation and NFκB nuclear translocation, and reduced migration.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "cell proliferation assay",
+      "cell-cycle analysis",
+      "cell viability assay",
+      "migration assay",
+      "western blot",
+      "NFκB translocation assay"
+    ],
+    "disease": "clear cell renal cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "CFH",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "CFH silencing in ccRCC cell lines resulted in decreased proliferation, cell-cycle arrest, increased mortality, increased p53 phosphorylation, NFκB nuclear translocation, and reduced migration.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "34039652",
+    "title": "Intracellular Factor H Drives Tumor Progression Independently of the Complement Cascade.",
+    "year": "2021",
+    "journal": "Cancer immunology research",
+    "doi": "10.1158/2326-6066.CIR-20-0787"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "FGFR1 inhibition by AZD4547 or shRNA induced autophagy via ERK/MAPK pathway and beclin-1 upregulation in H1581 and H520 NSCLC cells; co-inhibition of autophagy by beclin-1 silencing enhanced apoptosis, demonstrating protective autophagy.",
+    "validation_methods": [
+      "Immunoblotting",
+      "GFP-LC3 puncta assay",
+      "MDC staining",
+      "Cell viability assay",
+      "Apoptosis assay",
+      "Pharmacological inhibition (AZD4547)",
+      "Genetic knockdown (FGFR1 shRNA, beclin-1 siRNA)",
+      "Overexpression (constitutively active MEK1)"
+    ],
+    "disease": "Non-small cell lung cancer (lung squamous cell carcinoma)",
+    "validated_targets": [
+      {
+        "target_name": "FGFR1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Pharmacological inhibition with AZD4547 or knockdown by FGFR1 shRNA induced autophagy in FGFR1-amplified H1581 and H520 cells.",
+        "model_type": "cell line",
+        "specific_model_name": "H1581, H520"
+      },
+      {
+        "target_name": "autophagy",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Protective",
+        "experimental_detail": "Inhibition of autophagy by beclin-1 silencing enhanced apoptosis in AZD4547-treated H1581 and H520 cells, indicating autophagy is a pro-survival mechanism upon FGFR1 inhibition.",
+        "model_type": "cell line",
+        "specific_model_name": "H1581, H520"
+      },
+      {
+        "target_name": "BECN1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Protective",
+        "experimental_detail": "Beclin-1 was upregulated by FGFR1 inhibition; its knockdown attenuated autophagy and enhanced apoptosis after AZD4547 treatment in H1581 and H520 cells.",
+        "model_type": "cell line",
+        "specific_model_name": "H1581, H520"
+      }
+    ],
+    "pmid": "28558758",
+    "title": "FGF2/FGFR1 regulates autophagy in FGFR1-amplified non-small cell lung cancer cells.",
+    "year": "2017",
+    "journal": "Journal of experimental & clinical cancer research : CR",
+    "doi": "10.1186/s13046-017-0534-0"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "25813410",
+    "title": "Characterization of microRNA transcriptome in tumor, adjacent, and normal tissues of lung squamous cell carcinoma.",
+    "year": "2015",
+    "journal": "The Journal of thoracic and cardiovascular surgery",
+    "doi": "10.1016/j.jtcvs.2015.02.012"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "27613525",
+    "title": "A Two-Gene Prognostic Classifier for Early-Stage Lung Squamous Cell Carcinoma in Multiple Large-Scale and Geographically Diverse Cohorts.",
+    "year": "2017",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2016.08.141"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "17601969",
+    "title": "Gene expression of lung squamous cell carcinoma reflects mode of lymph node involvement.",
+    "year": "2007",
+    "journal": "The European respiratory journal",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Generated fully human scFv-Fc antibody D2 targeting FGFR1; demonstrated high-affinity binding (KD 0.59 nmol/L), selective internalization, and specific delivery of a cytotoxic payload into FGFR1-overexpressing lung cancer cells.",
+    "validation_methods": [
+      "Enzyme immunoassay (ELISA)",
+      "Surface plasmon resonance (SPR)",
+      "Confocal microscopy",
+      "Internalization assay",
+      "Cytotoxic payload delivery assay"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "FGFR1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Anti-FGFR1 scFv-Fc antibody D2 specifically bound to FGFR1, internalized, and delivered a cytotoxic payload into lung cancer cells with oncogenic FGFR1 gene amplifications.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "28483948",
+    "title": "High-Affinity Internalizing Human scFv-Fc Antibody for Targeting FGFR1-Overexpressing Lung Cancer.",
+    "year": "2017",
+    "journal": "Molecular cancer research : MCR",
+    "doi": "10.1158/1541-7786.MCR-16-0136"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "EBV-associated pulmonary carcinoma / pulmonary lymphoepithelioma-like carcinoma",
+    "validated_targets": [],
+    "pmid": "33927156",
+    "title": "Whole-exome Sequencing of Epstein-Barr Virus-associated Pulmonary Carcinoma With Low Lymphocytic Infiltration Shows Molecular Features Similar to Those of Classic Pulmonary Lymphoepithelioma-like Carcinoma: Evidence to Support Grouping Together as One Disease Entity.",
+    "year": "2021",
+    "journal": "The American journal of surgical pathology",
+    "doi": "10.1097/PAS.0000000000001722"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [],
+    "pmid": "31302234",
+    "title": "SWOG S1400C (NCT02154490)-A Phase II Study of Palbociclib for Previously Treated Cell Cycle Gene Alteration-Positive Patients with Stage IV Squamous Cell Lung Cancer (Lung-MAP Substudy).",
+    "year": "2019",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2019.06.027"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "32717408",
+    "title": "Multi-Institutional Prospective Validation of Prognostic mRNA Signatures in Early Stage Squamous Lung Cancer (Alliance).",
+    "year": "2020",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2020.07.005"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "34455068",
+    "title": "Programmed Death-Ligand 1 Tumor Proportion Score and Overall Survival From First-Line Pembrolizumab in Patients With Nonsquamous Versus Squamous NSCLC.",
+    "year": "2021",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2021.07.032"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [],
+    "pmid": "31158500",
+    "title": "SWOG S1400B (NCT02785913), a Phase II Study of GDC-0032 (Taselisib) for Previously Treated PI3K-Positive Patients with Stage IV Squamous Cell Lung Cancer (Lung-MAP Sub-Study).",
+    "year": "2019",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1016/j.jtho.2019.05.029"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "LUAD",
+    "evidence_summary": "Forced expression of EWI2 in human lung adenocarcinoma cells reduced integrin and growth factor receptor levels via lysosomal degradation, inhibited cell adhesion, movement, transformation in vitro, and suppressed tumor growth and metastasis in vivo.",
+    "validation_methods": [
+      "Overexpression",
+      "Protein expression analysis",
+      "Flow cytometry",
+      "Cell adhesion assay",
+      "Cell migration assay",
+      "In vivo xenograft model"
+    ],
+    "disease": "lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "IGSF8",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Forced expression of EWI2 in human lung adenocarcinoma cells reduced total cellular and cell surface levels of integrins and growth factor receptors via lysosomal degradation, decreased cell-matrix adhesion, movement, transformation in vitro, and tumor growth and metastasis in vivo.",
+        "model_type": "cell line and animal model",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "35339615",
+    "title": "EWI2 promotes endolysosome-mediated turnover of growth factor receptors and integrins to suppress lung cancer.",
+    "year": "2022",
+    "journal": "Cancer letters",
+    "doi": "10.1016/j.canlet.2022.215641"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Transient transfection of BRAF V470F mutant and gefitinib treatment; Western blot showed no drastic inhibition of ERK1/2 phosphorylation",
+    "validation_methods": [
+      "transient transfection",
+      "drug treatment",
+      "western blot"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "BRAF",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Gefitinib treatment on transient transfectants expressing BRAF V470F mutant did not drastically inhibit ERK1/2 phosphorylation",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "17409805",
+    "title": "The effect of gefitinib on B-RAF mutant non-small cell lung cancer and transfectants.",
+    "year": "2007",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Gain- and loss-of-function of miR-223-3p in LSCC cells demonstrated tumor suppressor role via inhibition of proliferation and migration; xenograft model confirmed tumor growth suppression; mechanistic studies showed mutant p53 represses miR-223-3p transcription and miR-223-3p targets TP53, forming a feedback loop.",
+    "validation_methods": [
+      "RT-PCR",
+      "in situ hybridization",
+      "CCK-8",
+      "colony formation",
+      "Transwell",
+      "xenograft",
+      "dual-luciferase reporter",
+      "ChIP",
+      "Western blot"
+    ],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "miR-223-3p",
+        "target_type": "miRNA",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Overexpression inhibited proliferation and migration in vitro and suppressed tumor growth in vivo; downregulated in LSCC tissues compared to adjacent normal tissues.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "TP53",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Mutant p53 directly bound to the miR-223 promoter and reduced its transcription; TP53 is a direct target of miR-223-3p, forming a regulatory feedback loop.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "30755230",
+    "title": "MiR-223-3p functions as a tumor suppressor in lung squamous cell carcinoma by miR-223-3p-mutant p53 regulatory feedback loop.",
+    "year": "2019",
+    "journal": "Journal of experimental & clinical cancer research : CR",
+    "doi": "10.1186/s13046-019-1079-1"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [],
+    "pmid": "19145203",
+    "title": "Molecular HPV typing as a diagnostic tool to discriminate primary from metastatic squamous cell carcinoma of the lung.",
+    "year": "2009",
+    "journal": "The American journal of surgical pathology",
+    "doi": "10.1097/PAS.0b013e3181938319"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [],
+    "pmid": "12684318",
+    "title": "A pulmonary metastatic model of human non-small cell lung carcinoma cells that produce a neutrophil elastase-like molecule in severe combined immunodeficiency mice.",
+    "year": "2003",
+    "journal": "Chest",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "siRNA-mediated depletion of YAP/TAZ, TEADs, or TP63 in primary human bronchial epithelial cells, followed by RNA-seq and ChIP-seq, identified a convergent transcriptional network promoting proliferation and immune evasion; CIITA was validated as a directly repressed target downregulated in progressive premalignant lesions.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "RNA-seq",
+      "ChIP-seq"
+    ],
+    "disease": "bronchial premalignant lesions progressing to lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "YAP1",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA depletion combined with RNA-seq and ChIP-seq revealed YAP1 cooperates with TAZ, TEADs and TP63 to promote basal epithelial cell proliferation and repress immune-related signals.",
+        "model_type": "cell line",
+        "specific_model_name": "primary human bronchial epithelial cells"
+      },
+      {
+        "target_name": "WWTR1",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA depletion of WWTR1 (TAZ) together with YAP, TEADs and TP63 established a convergent network driving proliferation and immune signal repression.",
+        "model_type": "cell line",
+        "specific_model_name": "primary human bronchial epithelial cells"
+      },
+      {
+        "target_name": "TEAD",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA-mediated depletion of TEADs in primary bronchial epithelial cells contributed to identification of a YAP/TAZ/TEAD/TP63 network controlling proliferation and immune evasion.",
+        "model_type": "cell line",
+        "specific_model_name": "primary human bronchial epithelial cells"
+      },
+      {
+        "target_name": "TP63",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "TP63 knockdown in primary human bronchial epithelial cells, followed by RNA-seq and ChIP-seq, showed its role in a transcriptional complex driving proliferation and suppressing interferon responses.",
+        "model_type": "cell line",
+        "specific_model_name": "primary human bronchial epithelial cells"
+      },
+      {
+        "target_name": "CIITA",
+        "target_type": "gene/protein",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "CIITA was identified as a direct target repressed by YAP/TAZ-TEAD-TP63 complex via ChIP-seq and RNA-seq analysis, and its expression is downregulated in progressive bronchial premalignant lesions, associating with immune evasion.",
+        "model_type": "cell line",
+        "specific_model_name": "primary human bronchial epithelial cells"
+      }
+    ],
+    "pmid": "37150829",
+    "title": "Convergence of YAP/TAZ, TEAD and TP63 activity is associated with bronchial premalignant severity and progression.",
+    "year": "2023",
+    "journal": "Journal of experimental & clinical cancer research : CR",
+    "doi": "10.1186/s13046-023-02674-5"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "shRNA-mediated GRHL3 silencing in LUSC cells promoted in vivo lung colonization and multi-organ metastasis, enhanced anoikis resistance and cancer stem cell characteristics in vitro, and increased SOX2 protein stability via SIRT1-mediated deacetylation.",
+    "validation_methods": [
+      "RNA interference",
+      "in vivo metastasis model",
+      "anoikis assay",
+      "cancer stem cell assays",
+      "western blot"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "GRHL3",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Silencing GRHL3 in LUSC cells promoted in vivo multi-organ metastasis, anoikis resistance, and cancer stem cell characteristics; it stabilized SOX2 protein via SIRT1-mediated deacetylation and reduced ubiquitination-dependent degradation.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "39804049",
+    "title": "Silencing GRHL3 promotes multiple organ distant metastasis of lung squamous cell carcinoma cells by enhancing SOX2 stability via SIRT1.",
+    "year": "2025",
+    "journal": "The Journal of pathology",
+    "doi": "10.1002/path.6385"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "24077455",
+    "title": "Prognostic value of fibroblast growth factor receptor 1 gene locus amplification in resected lung squamous cell carcinoma.",
+    "year": "2013",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1097/JTO.0b013e3182a46fe9"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "siRNA-mediated BIRC6 knockdown in NSCLC cell lines inhibited cell growth and sensitized cells to cisplatin, confirming oncogenic function and chemoresistance role.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "cell growth assay",
+      "apoptosis assay"
+    ],
+    "disease": "non-small-cell lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "BIRC6",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA-induced BIRC6 knockdown inhibited growth of NSCLC cell cultures and enhanced cisplatin-induced apoptosis.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "23287853",
+    "title": "Elevated expression of BIRC6 protein in non-small-cell lung cancers is associated with cancer recurrence and chemoresistance.",
+    "year": "2013",
+    "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+    "doi": "10.1097/JTO.0b013e31827d5237"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "HNSC",
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "head and neck squamous cell carcinoma",
+    "validated_targets": [],
+    "pmid": "23619603",
+    "title": "Fibroblast growth factor receptor 1 amplification is a common event in squamous cell carcinoma of the head and neck.",
+    "year": "2013",
+    "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+    "doi": "10.1038/modpathol.2013.58"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "Stable overexpression of HOPX in lung cancer cell lines inhibited proliferation, migration, and invasion, and promoted oncogenic Ras-induced senescence via MAPK pathway; siRNA knockdown reversed these effects.",
+    "validation_methods": [
+      "stable transfection",
+      "siRNA knockdown",
+      "Western blot",
+      "proliferation assay",
+      "migration assay",
+      "invasion assay",
+      "senescence assay"
+    ],
+    "disease": "lung cancer",
+    "validated_targets": [
+      {
+        "target_name": "HOPX",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "HOPX overexpression inhibited proliferation, migration, invasion, and induced senescence via oncogenic Ras/MAPK pathway; siRNA knockdown reduced Ras activity, MAPK activation, and p21 levels, decreasing senescence.",
+        "model_type": "cell line",
+        "specific_model_name": "lung cancer cell lines"
+      }
+    ],
+    "pmid": "25345926",
+    "title": "HOPX is methylated and exerts tumour-suppressive function through Ras-induced senescence in human lung cancer.",
+    "year": "2015",
+    "journal": "The Journal of pathology",
+    "doi": "10.1002/path.4469"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "siRNA knockdown or antibody neutralization of AREG, EGFR inhibitors, and ectopic EGFR expression all reduced or increased PTHrP mRNA in lung SCC cell lines; ectopic EGFR expression in vivo induced humoral hypercalcemia and osteolytic growth.",
+    "validation_methods": [
+      "siRNA knockdown",
+      "antibody neutralization",
+      "small molecule inhibitors",
+      "ectopic expression",
+      "xenograft model"
+    ],
+    "disease": "Lung Squamous Cell Carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "AREG",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA knockdown or precipitating antibody against AREG reduced PTHrP mRNA expression in lung SCC cell lines.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "EGFR",
+        "target_type": "gene/protein",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Ectopic expression of EGFR in a receptor-low cell line increased PTHrP mRNA in vitro and induced humoral hypercalcemia of malignancy and osteolytic growth in vivo; EGFR inhibitors reduced PTHrP.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "19825997",
+    "title": "Reconstitution of amphiregulin-epidermal growth factor receptor signaling in lung squamous cell carcinomas activates PTHrP gene expression and contributes to cancer-mediated diseases of the bone.",
+    "year": "2009",
+    "journal": "Molecular cancer research : MCR",
+    "doi": "10.1158/1541-7786.MCR-09-0131"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "NLRC5 knockdown in lung squamous cancer cells reduced IFNγ-induced MHC-I surface expression and CD8 T-cell cytotoxicity, confirming functional role in immune evasion.",
+    "validation_methods": [
+      "siRNA/shRNA knockdown",
+      "flow cytometry",
+      "cytotoxicity assay"
+    ],
+    "disease": "Lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "NLRC5",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Decreased NLRC5 expression in lung squamous cancer cells reduced IFNγ-induced MHC-I surface expression and CD8 T-cell cytotoxicity.",
+        "model_type": "cell line",
+        "specific_model_name": "lung squamous cancer cells"
+      }
+    ],
+    "pmid": "41670462",
+    "title": "Upregulation of an Epithelial miRNA Is Associated with Immune Evasion in Progressive Bronchial Premalignant Lesions.",
+    "year": "2026",
+    "journal": "Cancer immunology research",
+    "doi": "10.1158/2326-6066.CIR-25-0431"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "endobronchial lipomatous tumors",
+    "validated_targets": [],
+    "pmid": "24121172",
+    "title": "Endobronchial lipomatous tumors: clinicopathologic analysis of 12 cases with molecular cytogenetic evidence supporting classification as \"lipoma\".",
+    "year": "2013",
+    "journal": "The American journal of surgical pathology",
+    "doi": "10.1097/PAS.0b013e3182a115c9"
+  },
+  {
+    "has_wet_lab_validation": false,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": null,
+    "validation_methods": [],
+    "disease": "Non-small cell lung cancer",
+    "validated_targets": [],
+    "pmid": "32272498",
+    "title": "NFE2L2/KEAP1 Mutations Correlate with Higher Tumor Mutational Burden Value/PD-L1 Expression and Potentiate Improved Clinical Outcome with Immunotherapy.",
+    "year": "2020",
+    "journal": "The oncologist",
+    "doi": "10.1634/theoncologist.2019-0885"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "siRNA-mediated LPCRL knockdown in LUSC PDX models suppressed tumor growth and sensitized tumors to cisplatin; in vitro LPCRL promoted cisplatin resistance, proliferation, and migration via the USP15/MIB1/Notch axis.",
+    "validation_methods": [
+      "MTT assay",
+      "flow cytometry",
+      "colony formation assay",
+      "Transwell migration assay",
+      "in vivo tumor growth and metastasis assays",
+      "RNA pull-down",
+      "silver staining",
+      "RNA immunoprecipitation (RIP)",
+      "co-immunoprecipitation (Co-IP)",
+      "Western blot",
+      "patient-derived xenograft (PDX) model with intratumoral siRNA administration"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "LPCRL",
+        "target_type": "lncRNA",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "siRNA-mediated LPCRL knockdown in LUSC PDX model suppressed tumor growth and sensitized tumors to cisplatin; in vitro LPCRL promoted cisplatin resistance, proliferation, and migration.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "USP15/MIB1/Notch axis",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "LPCRL scaffolds USP15-MIB1 interaction, leading to MIB1 stabilization, nuclear export, DLL4 ubiquitination, Notch activation, and HES1 upregulation.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "42063179",
+    "title": "A novel antisense lncRNA, LPCRL, functions as a molecular scaffold for the USP15/MIB1 complex to promote primary cisplatin resistance and tumor progression in lung squamous cell carcinoma.",
+    "year": "2026",
+    "journal": "Journal of experimental & clinical cancer research : CR",
+    "doi": "10.1186/s13046-026-03721-7"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": "LUAD",
+    "evidence_summary": "Knockdown and overexpression of LINC00173 in LUAD cell lines and xenograft models, along with luciferase reporter, RIP, ChIP, and co-IP assays, validated the LINC00173/miR-1275/PROCA1/ZFP36L2/BCL2 axis in cisplatin resistance.",
+    "validation_methods": [
+      "in situ hybridization",
+      "qRT-PCR",
+      "colony formation",
+      "cell viability assay",
+      "flow cytometry",
+      "xenograft mouse model",
+      "co-immunoprecipitation",
+      "chromatin immunoprecipitation",
+      "RNA antisense purification",
+      "RNA immunoprecipitation",
+      "luciferase reporter assays"
+    ],
+    "disease": "lung adenocarcinoma",
+    "validated_targets": [
+      {
+        "target_name": "PI3K/AKT",
+        "target_type": "pathway",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Activated in DDP-resistant LUAD cells, leading to c-Myc elevation and LINC00173 suppression.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "MYC",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "c-Myc bound to the promoter of LINC00173 and suppressed its expression.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "LINC00173",
+        "target_type": "lncRNA",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "Suppressed LINC00173 in LUAD cells enhanced DDP chemoresistance, while restored LINC00173 in resistant cells regained chemosensitivity. LINC00173 also acted as a sponge for oncogenic miR-1275.",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "miR-1275",
+        "target_type": "miRNA",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Oncogenic miR-1275 adsorption was attenuated by reduced LINC00173, leading to downregulation of the target gene PROCA1.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "PROCA1",
+        "target_type": "gene",
+        "expression_change": "Downregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "PROCA1 recruited ZFP36L2 to bind BCL2 3'UTR, reducing BCL2 mRNA stability and activating apoptosis.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "ZFP36L2",
+        "target_type": "gene",
+        "expression_change": "Null",
+        "functional_role": "Null",
+        "experimental_detail": "Recruited by PROCA1 to the BCL2 3'UTR, decreasing BCL2 mRNA stability.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "BCL2",
+        "target_type": "gene",
+        "expression_change": "Upregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "LINC00173 downregulation increased BCL2 mRNA stability via the miR-1275/PROCA1/ZFP36L2 axis, inhibiting apoptosis.",
+        "model_type": "cell line",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "36627670",
+    "title": "Downregulation of Linc00173 increases BCL2 mRNA stability via the miR-1275/PROCA1/ZFP36L2 axis and induces acquired cisplatin resistance of lung adenocarcinoma.",
+    "year": "2023",
+    "journal": "Journal of experimental & clinical cancer research : CR",
+    "doi": "10.1186/s13046-022-02560-6"
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "X-ray irradiation in RERF-LC-AI lung squamous carcinoma cells increased VEGF mRNA expression; induction blocked by Src inhibitor genistein and PKC inhibitor H7.",
+    "validation_methods": [
+      "drug inhibition",
+      "mRNA expression analysis"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "VEGFA",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Null",
+        "experimental_detail": "X-ray irradiation (15 Gy) significantly increased VEGFA mRNA up to 2.5-fold at 16-24 h; induction blocked by genistein (Src inhibitor) or H7 (PKC inhibitor).",
+        "model_type": "cell line",
+        "specific_model_name": "RERF-LC-AI"
+      }
+    ],
+    "pmid": "10397456",
+    "title": "Evidence for mRNA expression of vascular endothelial growth factor by X-ray irradiation in a lung squamous carcinoma cell line.",
+    "year": "1998",
+    "journal": "Cancer letters",
+    "doi": ""
+  },
+  {
+    "has_wet_lab_validation": true,
+    "is_review": false,
+    "insufficient_info": false,
+    "corrected_tcga_code": null,
+    "evidence_summary": "KCTD1 gain- and loss-of-function experiments, Jervine treatment, and tumor allografts showed KCTD1 reduces LUSC malignancy via Hh pathway inactivation; ZBTB20 overexpression in LUSC cells repressed KCTD1 and activated Hh, enhancing malignancy, reversed by Jervine or KCTD1 restoration.",
+    "validation_methods": [
+      "gain- and loss-of-function experiments",
+      "Jervine treatment",
+      "tumor allografts",
+      "cell transfection"
+    ],
+    "disease": "lung squamous cell carcinoma",
+    "validated_targets": [
+      {
+        "target_name": "KCTD1",
+        "target_type": "gene/protein",
+        "expression_change": "Upregulated",
+        "functional_role": "Tumor suppressor",
+        "experimental_detail": "KCTD1 knockdown reduced LUSC cell proliferation, migration, clonogenicity, and stemness by activating Hh pathway, reversed by Jervine; tumor allografts in mice validated in vivo",
+        "model_type": "mixed",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "ZBTB20",
+        "target_type": "gene/protein",
+        "expression_change": "Downregulated",
+        "functional_role": "Oncogene",
+        "experimental_detail": "ZBTB20 overexpression in LUSC cells downregulated KCTD1 via transcriptional repression, activated Hh pathway, and enhanced malignant behavior; effects counteracted by Jervine or KCTD1 restoration",
+        "model_type": "cell line",
+        "specific_model_name": null
+      },
+      {
+        "target_name": "Hedgehog signaling pathway",
+        "target_type": "pathway",
+        "expression_change": "Null",
+        "functional_role": "Oncogene",
+        "experimental_detail": "Jervine, an Hh inhibitor, reversed the oncogenic effects of KCTD1 knockdown and ZBTB20 overexpression",
+        "model_type": "mixed",
+        "specific_model_name": null
+      }
+    ],
+    "pmid": "41672223",
+    "title": "ZBTB20 promotes malignancy and stemness in lung squamous cell carcinoma through the transcriptional repression of KCTD1 and activation of Hedgehog signaling.",
+    "year": "2026",
+    "journal": "Cancer letters",
+    "doi": "10.1016/j.canlet.2026.218301"
+  }
+]
