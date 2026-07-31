@@ -88,7 +88,7 @@ JOURNAL_ISSNS = [
     "0959-8049",  # European Journal of Cancer
     "1351-0088",  # Endocrine-Related Cancer
     "0021-972X",  # JCEM
-    "2059-3635",  # Signal Transduction and Targeted Therapy
+    "2095-9907",  # Signal Transduction and Targeted Therapy
     "1350-9047",  # Cell Death & Differentiation
     "0261-4189",  # EMBO Journal
     "0890-9369",  # Genes & Development
