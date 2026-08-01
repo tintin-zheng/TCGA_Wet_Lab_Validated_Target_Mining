@@ -49,7 +49,7 @@ SEARCH_COUNT_OVERRIDES = {
 }
 
 
-# ============ 41 Q1 Journal ISSNs ============
+# ============ 40 Q1 Journal ISSNs ============
 JOURNAL_ISSNS = [
     "0028-0836",  # Nature
     "2375-2548",  # Science Advances
@@ -63,7 +63,7 @@ JOURNAL_ISSNS = [
     "1535-6108",  # Cancer Cell
     "2662-1347",  # Nature Cancer
     "2159-8274",  # Cancer Discovery
-    "1474-175X",  # Nature Reviews Cancer
+
     "0732-183X",  # JCO
     "2374-2437",  # JAMA Oncology
     "0923-7534",  # Annals of Oncology
@@ -262,7 +262,7 @@ EXTRA_JOURNALS = {
         "0302-2838",  # European Urology
         "0022-5347",  # The Journal of Urology
         "1759-4812",  # Nature Reviews Urology
-        "2588-8431",  # European Urology Oncology
+        "2588-9311",  # European Urology Oncology
         "2405-4569",  # European Urology Focus
         "2047-2919",  # Andrology
         "1008-682X",  # Asian Journal of Andrology
