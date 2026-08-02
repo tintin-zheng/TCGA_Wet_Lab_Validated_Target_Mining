@@ -154,7 +154,14 @@ def run_integration():
         "target": lambda x: "; ".join(sorted(set(x.dropna()))),
         "disease_en": "first",
         "disease_cn": "first",
-        "target_type": lambda x: "; ".join(sorted(set(x.dropna()))) or "unknown",
+        # Normalize target_type: keep gene/protein separate.
+        # If the same target is labeled both "gene" and "protein" across papers,
+        # collapse to "gene/protein". Pure gene stays gene, pure protein stays protein.
+        "target_type": lambda x: (
+            "gene/protein"
+            if {"gene", "protein"} <= set(x.dropna()) or "gene/protein" in set(x.dropna())
+            else (x.dropna().iloc[0] if len(x.dropna()) > 0 else "unknown")
+        ),
         "official_symbol": "first",
         "ncbi_gene_id": "first",
         "ensembl_id": "first",
