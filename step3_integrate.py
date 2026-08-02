@@ -141,11 +141,20 @@ def run_integration():
 
     df = pd.DataFrame(results_table)
 
-    # 4. Deduplicate & merge (same cancer + same target -> aggregate across papers)
-    deduped = df.groupby(["tcga_code", "target"]).agg({
+    # 4. Deduplicate & merge by canonical target (official_symbol if mapped, else uppercased name)
+    #    This merges alias collisions like AKT1/AKT, CD276/B7-H3 into one row per (cancer, gene).
+    df["canonical_target"] = df.apply(
+        lambda row: row["official_symbol"]
+        if row["official_symbol"]
+        else str(row["target"]).strip().upper(),
+        axis=1
+    )
+
+    deduped = df.groupby(["tcga_code", "canonical_target"]).agg({
+        "target": lambda x: "; ".join(sorted(set(x.dropna()))),
         "disease_en": "first",
         "disease_cn": "first",
-        "target_type": "first",
+        "target_type": lambda x: "; ".join(sorted(set(x.dropna()))) or "unknown",
         "official_symbol": "first",
         "ncbi_gene_id": "first",
         "ensembl_id": "first",
@@ -156,8 +165,8 @@ def run_integration():
         "experimental_detail": lambda x: " | ".join(x.dropna()),
         "model_type": lambda x: "; ".join(set(x.dropna())),
         "specific_model_name": lambda x: "; ".join(set(x.dropna())),
-        "pmid": lambda x: "; ".join(x),
-        "doi": lambda x: "; ".join(x),
+        "pmid": lambda x: "; ".join(sorted(set(x))),
+        "doi": lambda x: "; ".join(set(x.dropna())),
         "year": lambda x: f"{min(y for y in x if y)}-{max(y for y in x if y)}" if any(x) else "",
         "journal": lambda x: "; ".join(set(x.dropna())),
         "title": lambda x: " | ".join(x),
@@ -204,8 +213,8 @@ def run_integration():
             "support_papers": n_support_papers,
         })
 
-    # 7. Cross-cancer target statistics
-    cross_cancer = deduped.groupby("target")["tcga_code"].nunique().sort_values(ascending=False)
+    # 7. Cross-cancer target statistics (use canonical_target to avoid alias duplicates)
+    cross_cancer = deduped.groupby("canonical_target")["tcga_code"].nunique().sort_values(ascending=False)
     multi_cancer = cross_cancer[cross_cancer >= 3]
 
     # 8. Terminal output
@@ -310,7 +319,7 @@ def write_summary_markdown(suffix, deduped, breakdown_rows, multi_cancer, mapper
         lines.append("| # | Target | Cancer Types |")
         lines.append("|---|--------|-------------|")
         for rank, (gene, count) in enumerate(multi_cancer.head(20).items(), 1):
-            cancers = ", ".join(sorted(deduped[deduped["target"] == gene]["tcga_code"].unique()))
+            cancers = ", ".join(sorted(deduped[deduped["canonical_target"] == gene]["tcga_code"].unique()))
             lines.append(f"| {rank} | {gene} | {count} ({cancers}) |")
     else:
         lines.append("No cross-cancer targets found (≥3 cancer types threshold).")
