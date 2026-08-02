@@ -141,7 +141,7 @@ EXTRA_JOURNALS = {
         "1078-1439",  # Urologic Oncology
         "0302-2838",  # European Urology
         "1759-4812",  # Nature Reviews Urology
-        "2588-8431",  # European Urology Oncology
+
         "2405-4569",  # European Urology Focus
         "1558-7673",  # Clinical Genitourinary Cancer
         # Nephrology
@@ -169,7 +169,7 @@ EXTRA_JOURNALS = {
         "1078-1439",  # Urologic Oncology
         "0302-2838",  # European Urology
         "1759-4812",  # Nature Reviews Urology
-        "2588-8431",  # European Urology Oncology
+
         "2405-4569",  # European Urology Focus
         "1558-7673",  # Clinical Genitourinary Cancer
         # Nephrology
@@ -262,7 +262,7 @@ EXTRA_JOURNALS = {
         "0302-2838",  # European Urology
         "0022-5347",  # The Journal of Urology
         "1759-4812",  # Nature Reviews Urology
-        "2588-8431",  # European Urology Oncology
+
         "2405-4569",  # European Urology Focus
         "2047-2919",  # Andrology
         "1008-682X",  # Asian Journal of Andrology
