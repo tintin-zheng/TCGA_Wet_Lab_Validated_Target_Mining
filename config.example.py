@@ -140,12 +140,12 @@ EXTRA_JOURNALS = {
         "1464-4096",  # BJU International
         "1078-1439",  # Urologic Oncology
         "0302-2838",  # European Urology
-        "1759-4812",  # Nature Reviews Urology
+
 
         "2405-4569",  # European Urology Focus
         "1558-7673",  # Clinical Genitourinary Cancer
         # Nephrology
-        "1759-5029",  # Nature Reviews Nephrology
+
 
         "1046-6673",  # JASN
         # Pathology
@@ -168,12 +168,12 @@ EXTRA_JOURNALS = {
         "1464-4096",  # BJU International
         "1078-1439",  # Urologic Oncology
         "0302-2838",  # European Urology
-        "1759-4812",  # Nature Reviews Urology
+
 
         "2405-4569",  # European Urology Focus
         "1558-7673",  # Clinical Genitourinary Cancer
         # Nephrology
-        "1759-5029",  # Nature Reviews Nephrology
+
 
         "1046-6673",  # JASN
         "1555-9041",  # CJASN
@@ -221,7 +221,7 @@ EXTRA_JOURNALS = {
         # Endocrinology (adrenal-specific)
 
         "0804-4643",  # European Journal of Endocrinology
-        "1043-2760",  # Trends in Endocrinology & Metabolism
+
         "1046-3976",  # Endocrine Pathology
         "2041-4889",  # Cell Death & Disease
         "1574-7891",  # Molecular Oncology
@@ -261,7 +261,7 @@ EXTRA_JOURNALS = {
         # Urology (testicular cancer domain)
         "0302-2838",  # European Urology
         "0022-5347",  # The Journal of Urology
-        "1759-4812",  # Nature Reviews Urology
+
 
         "2405-4569",  # European Urology Focus
         "2047-2919",  # Andrology
@@ -283,7 +283,7 @@ EXTRA_JOURNALS = {
         "0161-6420",  # Ophthalmology
         "2168-6165",  # JAMA Ophthalmology
         "0002-9394",  # American Journal of Ophthalmology
-        "1350-9462",  # Progress in Retinal and Eye Research
+
         # Pathology (shared)
         "0893-3952",  # Modern Pathology
         "0147-5185",  # American Journal of Surgical Pathology
