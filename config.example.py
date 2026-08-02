@@ -146,7 +146,7 @@ EXTRA_JOURNALS = {
         "1558-7673",  # Clinical Genitourinary Cancer
         # Nephrology
         "1759-5029",  # Nature Reviews Nephrology
-        "0085-2538",  # Kidney International
+
         "1046-6673",  # JASN
         # Pathology
         "0893-3952",  # Modern Pathology
@@ -174,7 +174,7 @@ EXTRA_JOURNALS = {
         "1558-7673",  # Clinical Genitourinary Cancer
         # Nephrology
         "1759-5029",  # Nature Reviews Nephrology
-        "0085-2538",  # Kidney International
+
         "1046-6673",  # JASN
         "1555-9041",  # CJASN
         # Pathology
