@@ -88,7 +88,7 @@ JOURNAL_ISSNS = [
     "0959-8049",  # European Journal of Cancer
     "1351-0088",  # Endocrine-Related Cancer
     "0021-972X",  # JCEM
-    "2095-9907",  # Signal Transduction and Targeted Therapy
+    "2059-3635",  # Signal Transduction and Targeted Therapy
     "1350-9047",  # Cell Death & Differentiation
     "0261-4189",  # EMBO Journal
     "0890-9369",  # Genes & Development
@@ -219,7 +219,7 @@ EXTRA_JOURNALS = {
     # ============ Newly Added Rare/Underserved Cancers ============
     "ACC": [
         # Endocrinology (adrenal-specific)
-        "1945-7189",  # Endocrine Reviews
+
         "0804-4643",  # European Journal of Endocrinology
         "1043-2760",  # Trends in Endocrinology & Metabolism
         "1046-3976",  # Endocrine Pathology
@@ -262,7 +262,7 @@ EXTRA_JOURNALS = {
         "0302-2838",  # European Urology
         "0022-5347",  # The Journal of Urology
         "1759-4812",  # Nature Reviews Urology
-        "2588-9311",  # European Urology Oncology
+        "2588-8431",  # European Urology Oncology
         "2405-4569",  # European Urology Focus
         "2047-2919",  # Andrology
         "1008-682X",  # Asian Journal of Andrology
