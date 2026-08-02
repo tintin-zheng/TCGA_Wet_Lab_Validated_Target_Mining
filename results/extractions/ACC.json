@@ -3946,21 +3946,6 @@
   },
   {
     "has_wet_lab_validation": false,
-    "is_review": true,
-    "insufficient_info": false,
-    "corrected_tcga_code": null,
-    "evidence_summary": null,
-    "validation_methods": [],
-    "disease": "Adrenocortical Carcinoma",
-    "validated_targets": [],
-    "pmid": "35551369",
-    "title": "Update on Biology and Genomics of Adrenocortical Carcinomas: Rationale for Emerging Therapies.",
-    "year": "2022",
-    "journal": "Endocrine reviews",
-    "doi": "10.1210/endrev/bnac012"
-  },
-  {
-    "has_wet_lab_validation": false,
     "is_review": false,
     "insufficient_info": false,
     "corrected_tcga_code": null,
